@@ -89,7 +89,6 @@ def _parse_citations(text: str) -> tuple[str, list[dict]]:
 
 def answer_questions(index_dir: str, questions_path: str, out_path: str, backend: str, k: int = 4) -> None:
     import bm25s
-
     from groundtruth.generator import OfficialGenerator
     from groundtruth.io import load_questions, write_predictions
 
