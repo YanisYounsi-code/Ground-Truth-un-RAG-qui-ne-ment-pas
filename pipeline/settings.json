@@ -1,0 +1,17 @@
+{
+  "embed_model": "BAAI/bge-m3",
+  "rerank_model": "BAAI/bge-reranker-v2-m3",
+  "parser": "pymupdf_tables",
+  "ocr": true,
+  "chunking": "contextual",
+  "chunk_words": 250,
+  "chunk_overlap": 50,
+  "bm25_k": 50,
+  "dense_k": 50,
+  "rrf_k": 60,
+  "rerank_k": 30,
+  "context_chunks": 6,
+  "context_tokens": 3000,
+  "max_new_tokens": 256,
+  "threshold": null
+}

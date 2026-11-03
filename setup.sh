@@ -1,14 +1,25 @@
 #!/usr/bin/env bash
 # Phase d'installation de la finale : seule phase où le réseau est disponible.
-# Installe tes dépendances et télécharge TOUS les poids dont ton pipeline a besoin
-# (générateur officiel, embedder, reranker, OCR...) dans le cache Hugging Face.
+# Installe les dépendances, Tesseract (OCR des scans) et télécharge TOUS les poids utilisés.
 set -euo pipefail
 pip install -q -r requirements.txt
+# Tesseract + le modèle de langue française, pour lire les 10 documents numérisés
+if ! command -v tesseract >/dev/null 2>&1; then
+  if command -v apt-get >/dev/null 2>&1; then
+    SUDO=""; [ "$(id -u)" -ne 0 ] && SUDO="sudo"
+    $SUDO apt-get -qq update && $SUDO apt-get -qq install -y tesseract-ocr tesseract-ocr-fra >/dev/null \
+      || echo "ATTENTION : Tesseract non installé, les pages scannées resteront vides"
+  else
+    echo "ATTENTION : apt-get absent, installe tesseract-ocr et tesseract-ocr-fra à la main"
+  fi
+fi
 python - <<'PY'
 from huggingface_hub import snapshot_download
+snapshot_download("mistralai/Ministral-3-3B-Instruct-2512")   # générateur officiel (obligatoire)
 for repo in [
-    "mistralai/Ministral-3-3B-Instruct-2512",   # générateur officiel (obligatoire)
-    # ajoute ici tes modèles : "BAAI/bge-m3", "lightonai/LightOnOCR-2-1B", ...
+    "BAAI/bge-m3",                              # embedder (recherche dense)
+    "BAAI/bge-reranker-v2-m3",                  # reranker
+    "Qwen/Qwen3-4B-Instruct-2507",              # juge officiel, pour évaluer sur la validation
 ]:
-    snapshot_download(repo)
+    snapshot_download(repo, ignore_patterns=["onnx/*", "*.onnx", "*.h5", "*.msgpack", "*.ot"])
 PY

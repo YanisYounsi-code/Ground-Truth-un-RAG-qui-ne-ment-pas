@@ -1,9 +1,11 @@
-# Kit Ground Truth : dépendances minimales (Python >= 3.10)
+# Kit Ground Truth : dépendances (Python >= 3.10)
 pymupdf>=1.24
 pillow>=10.0
 numpy>=1.26
-bm25s>=0.2          # baseline uniquement (le bloc 1 doit être codé sans)
-# Générateur officiel et juge (GPU conseillé)
+bm25s>=0.2          # baseline et vérification du BM25 maison uniquement
+tzdata              # Windows : zoneinfo ne trouve pas "Europe/Paris" sans lui (groundtruth.submit)
+pytesseract>=0.3.10 # OCR des pages scannées (le binaire tesseract est installé par setup.sh)
+# Générateur officiel, juge, embedder et reranker (GPU conseillé)
 torch>=2.3
 transformers>=5.0
 mistral-common>=1.8.6

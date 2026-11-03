@@ -1,0 +1,427 @@
+[
+ {
+  "doc_id": "insee-ip2051",
+  "page": 2,
+  "type": "tableau",
+  "qid": "val1-008",
+  "indice": "Figure 3, ligne Europe du Sud : 11 (2006), 11 (2010), 16 (2014), 11 (2018), 7 (2023)",
+  "faits": [
+   {
+    "valeur": "16",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2062",
+  "page": 2,
+  "type": "tableau",
+  "qid": "val1-011",
+  "indice": "Figure 3, ligne « Vin » : valeur 2024 10,9 Md€ ; évolution volume -28,8, prix 0,1, valeur -28,7.",
+  "faits": [
+   {
+    "valeur": "10,9",
+    "libelle": ""
+   },
+   {
+    "valeur": "28,7 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2082",
+  "page": 1,
+  "type": "tableau",
+  "qid": "val1-012",
+  "indice": "Rural à habitat très dispersé 1 992 1 655 411 12 10 2,9 101",
+  "faits": [
+   {
+    "valeur": "101 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2069",
+  "page": 2,
+  "type": "tableau",
+  "qid": "val1-021",
+  "indice": "Livraison 9,6 6 46 14",
+  "faits": [
+   {
+    "valeur": "46 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-effacements-electricite",
+  "page": 56,
+  "type": "tableau",
+  "qid": "val1-043",
+  "indice": "Tableau n° 3, ligne « Prime unitaire (€/MW lauréat) » : 14 450 10 530 8 930 11 885 35 215 -115 60 850 40 575",
+  "faits": [
+   {
+    "valeur": "20 275",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2107",
+  "page": 3,
+  "type": "tableau",
+  "qid": "val1-044",
+  "indice": "Figure 3, ligne Autres pays de l'UE27 : 32 (milliers) ; -8 ; 20 ; 29 ; 46 ; 54",
+  "faits": [
+   {
+    "valeur": "32 000",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2046",
+  "page": 1,
+  "type": "tableau",
+  "qid": "val1-054",
+  "indice": "Tableau 1 : « 10 ou plus 246 600 0,9 2,6 7,4 »",
+  "faits": [
+   {
+    "valeur": "246 600",
+    "libelle": ""
+   },
+   {
+    "valeur": "0,9 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2076",
+  "page": 3,
+  "type": "tableau",
+  "qid": "val1-056",
+  "indice": "Tableau 4 : « Autres pays d'Europe 24,3 » ; « Ensemble 33,5 » (part de naturalisés parmi les immigrés, en %)",
+  "faits": [
+   {
+    "valeur": "24,3 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-difficultes-entreprises",
+  "page": 61,
+  "type": "tableau",
+  "qid": "val1-066",
+  "indice": "2025 3 786 492 637 1 848 865 319 74 842 359",
+  "faits": [
+   {
+    "valeur": "492 637",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2086",
+  "page": 2,
+  "type": "tableau",
+  "qid": "val1-067",
+  "indice": "Vin 11,3 7,7 -3,3 4,2",
+  "faits": [
+   {
+    "valeur": "11,3",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-effacements-electricite",
+  "page": 38,
+  "type": "graphique",
+  "qid": "val1-006",
+  "indice": "Graphique n° 7 : la barre 2023 « NB heures à prix spot > barème » (environ 800 heures) est la plus basse des années 2018 à 2025",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2113",
+  "page": 4,
+  "type": "graphique",
+  "qid": "val1-010",
+  "indice": "Figure 4 (anneau), segment « Rien, je refuse de faire des efforts » étiqueté 2,6 %.",
+  "faits": [
+   {
+    "valeur": "2,6 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-informatique-quantique",
+  "page": 39,
+  "type": "graphique",
+  "qid": "val1-022",
+  "indice": "Graphique n° 3 (répartition des crédits par source de financement, AE 2020-2025) : flux étiqueté « SNQ - PROQCIMA (133 M€ - 19 %) ».",
+  "faits": [
+   {
+    "valeur": "133 M€",
+    "libelle": ""
+   },
+   {
+    "valeur": "19 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2039",
+  "page": 2,
+  "type": "graphique",
+  "qid": "val1-027",
+  "indice": "Figure 2 : la barre « Agriculture » (poids dans la consommation d'espace économique) est la plus courte, proche de 0 %, bien en dessous de l'hébergement-restauration.",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2064",
+  "page": 3,
+  "type": "graphique",
+  "qid": "val1-041",
+  "indice": "Figure 4, barres « Pôles » : la plus longue est celle des aires de moins de 50 000 hab. (vers 26 %)",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2093",
+  "page": 2,
+  "type": "graphique",
+  "qid": "val1-042",
+  "indice": "Figure 2b « Par provenance de dépenses » : bloc « Administrations locales » étiqueté 322 (en Md€), « Administration centrale » 591, « Sécurité sociale » 759.",
+  "faits": [
+   {
+    "valeur": "322",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2059",
+  "page": 2,
+  "type": "graphique",
+  "qid": "val1-045",
+  "indice": "Figure 2 : dans la barre 2022, le segment rouge « Hébergement-restauration » (≈3 points) est le plus grand ; le losange « Services marchands » est à ≈7,5 %.",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2061",
+  "page": 3,
+  "type": "graphique",
+  "qid": "val1-050",
+  "indice": "Figure 5 : après « Achat du commerce prêt à l'emploi » (≈69 %), la barre la plus longue est « Contrat passé avec un prestataire externe » (≈29 %), devant logiciel libre modifié (≈24 %) et développement interne (≈23 %).",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2067",
+  "page": 2,
+  "type": "graphique",
+  "qid": "val1-055",
+  "indice": "Figure 2 : la barre verte « Évolution annuelle » de 2020 (≈5,5 %) est de loin la plus haute de la série 2012-2023.",
+  "faits": [
+   {
+    "valeur": "2020",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-informatique-quantique",
+  "page": 88,
+  "type": "graphique",
+  "qid": "val1-060",
+  "indice": "Graphique n° 20 (répartition par type d’ingérence, BITD 2025, d’après la DRSD) : secteur « Atteintes humaines » étiqueté 28 %, « Atteintes physiques » 24 %.",
+  "faits": [
+   {
+    "valeur": "28 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2036",
+  "page": 2,
+  "type": "scan",
+  "qid": "val1-003",
+  "indice": "en 2022, on en dénombre 22 700, contre 23 400 en 2015, soit une baisse de 3 %.",
+  "faits": [
+   {
+    "valeur": "22 700",
+    "libelle": ""
+   },
+   {
+    "valeur": "23 400",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2103",
+  "page": 2,
+  "type": "scan",
+  "qid": "val1-015",
+  "indice": "Figure 2, colonne « Surfaces artificialisées par habitant (en m²) » : Rural à habitat très dispersé 2 830 ; Grands centres urbains 204 ; France hors Guyane 714.",
+  "faits": [
+   {
+    "valeur": "2 830",
+    "libelle": ""
+   },
+   {
+    "valeur": "204",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2103",
+  "page": 1,
+  "type": "scan",
+  "qid": "val1-018",
+  "indice": "nettement plus élevé dans les grands centres urbains et les centres urbains intermédiaires (195 et 124 ménages en moyenne) [...] (41 et 29 ménages par hectare)",
+  "faits": [
+   {
+    "valeur": "195",
+    "libelle": ""
+   },
+   {
+    "valeur": "29",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2127",
+  "page": 4,
+  "type": "scan",
+  "qid": "val1-020",
+  "indice": "En 2025, 5 699 prénoms mixtes ont été donnés. Ils sont portés par 536 bébés pour 10 000 naissances.",
+  "faits": [
+   {
+    "valeur": "5 699",
+    "libelle": ""
+   },
+   {
+    "valeur": "536",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-vaccination-synthese",
+  "page": 6,
+  "type": "scan",
+  "qid": "val1-030",
+  "indice": "La proportion de personnes plutôt ou très favorables à la vaccination est passée de 61 % en 2010 à 84 % en 2023, puis 80 % en 2024.",
+  "faits": [
+   {
+    "valeur": "61 %",
+    "libelle": ""
+   },
+   {
+    "valeur": "80 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "cc-pac-synthese",
+  "page": 7,
+  "type": "scan",
+  "qid": "val1-065",
+  "indice": "Graphique « Classification des mesures du PSN de la France selon leur degré de subsidiarité » : secteur « Aide de base » étiqueté 36 %.",
+  "faits": [
+   {
+    "valeur": "36 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2127",
+  "page": 1,
+  "type": "scan",
+  "qid": "val1-078",
+  "indice": "De 8 007 prénoms différents donnés aux enfants nés en 1946 à 65 940 pour ceux nés en 2025",
+  "faits": [
+   {
+    "valeur": "65 940",
+    "libelle": ""
+   },
+   {
+    "valeur": "8 007",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2088",
+  "page": 1,
+  "type": "scan",
+  "qid": "val1-088",
+  "indice": "En 2022, en France métropolitaine, le fioul domestique est la source principale de chauffage de 8,5 % des résidences principales, soit 2,6 millions.",
+  "faits": [
+   {
+    "valeur": "2,6 millions",
+    "libelle": ""
+   },
+   {
+    "valeur": "8,5 %",
+    "libelle": ""
+   }
+  ],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2041",
+  "page": 1,
+  "type": "scan",
+  "qid": "",
+  "indice": "",
+  "faits": [],
+  "verifie": false
+ },
+ {
+  "doc_id": "insee-ip2041",
+  "page": 2,
+  "type": "scan",
+  "qid": "",
+  "indice": "",
+  "faits": [],
+  "verifie": false
+ }
+]
