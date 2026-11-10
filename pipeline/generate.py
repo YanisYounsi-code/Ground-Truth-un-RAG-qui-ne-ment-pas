@@ -68,6 +68,8 @@ NON_REPONSE = re.compile(
     r"|(donnees|chiffres|informations|documents) (disponibles |fournis |de la cour des comptes |de l'insee )?"
     r"(ne |n')(permett|distingu|precis|mention|fourni|indiqu|donne|couvr)"
     r"|pas d'information|impossible de (repondre|determiner|preciser)|je ne (peux|dispose) pas"
+    r"|(pas|non) (explicitement|directement|precisement)"  # le modèle avoue deviner (« chiffre non explicitement donné »)
+    r"|introuvable"  # « INTROUVABLE » écrit au milieu d'une réponse partielle
 )
 
 
@@ -76,6 +78,22 @@ def _sans_accents(texte):
 
     texte = unicodedata.normalize("NFKD", texte.lower().replace("\u2019", "'"))
     return "".join(c for c in texte if not unicodedata.combining(c))
+
+
+def chiffres_non_ancres(reponse, retenus, question):
+    """Chiffres de la réponse qui n'apparaissent dans aucun extrait ni dans la question.
+
+    Un tel chiffre a été inventé ou calculé par le modèle : sur la validation v1, ces réponses sont
+    presque toujours fausses. On compare avec les mêmes règles que la notation officielle
+    (« 2,6 millions » = « 2 600 000 », arrondi d'affichage de 0,5 %).
+    """
+    from groundtruth.normalize import _close, extract_numbers
+
+    connus = set()
+    for raw, avec_unite in extract_numbers(" ".join(p["text"] for p in retenus) + " " + question):
+        connus.update((raw, avec_unite))
+    return [raw for raw, avec_unite in extract_numbers(reponse)
+            if not any(_close(raw, c) or _close(avec_unite, c) for c in connus)]
 
 
 def lire_reponse(brut, retenus):
@@ -120,6 +138,10 @@ def answer_all(retrieval_path, questions_path, out_path, backend="hf", gate=True
             retenus = assembler(gen, q["question"], r["passages"], reglages)
             brut = gen.chat(messages(q["question"], retenus), max_new_tokens=reglages["max_new_tokens"])
             reponse, citations = lire_reponse(brut, retenus)
+            inventes = chiffres_non_ancres(reponse, retenus, q["question"]) if reponse != ABSTENTION else []
+            if inventes:  # vérification : on préfère se taire (0) que donner un chiffre faux (-1)
+                pred["verif"] = f"chiffres absents des extraits : {inventes[:3]}"
+                reponse, citations = ABSTENTION, []
             pred.update(answer=reponse, citations=citations, raw=brut)
         predictions.append(pred)
         print(f"{q['qid']}: {pred['answer'][:90]}")

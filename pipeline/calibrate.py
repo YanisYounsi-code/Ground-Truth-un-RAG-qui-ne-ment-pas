@@ -61,9 +61,13 @@ def main():
     for pct in (0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9):
         print(f"    seuil {pct:.1f} -> {score_avec_seuil(rows, pct):+.3f}")
     print(f"Courbe complète : {args.csv}")
+    if meilleur - sans_porte < 0.02:
+        # moins de 2 questions gagnées sur 100 : c'est du bruit, une porte réglée là-dessus surapprendrait
+        print("La porte n'apporte rien de significatif (< +0,02) : pas de seuil.")
+        seuil = None
     if not args.dry_run:
         reglages = settings.load()
-        reglages["threshold"] = round(seuil, 4)
+        reglages["threshold"] = None if seuil is None else round(seuil, 4)
         settings.save(reglages)
         print("Seuil écrit dans pipeline/settings.json")
 

@@ -69,12 +69,39 @@ retrouvée sur la même ligne que son libellé, pour PyMuPDF brut, PyMuPDF + tab
 
 …
 
-## 4. Abstention
+## 4. Abstention : la porte sur le score du reranker ne marche pas, la vérification de la réponse oui
 
-Courbe du score de confiance en fonction du seuil (`des_tests/calibration.png`). Seuil retenu : …
-(milieu du meilleur plateau, pour limiter le surapprentissage sur 100 questions).
+Barème : +1 juste et cité, −1 faux, 0 abstention (+1 sur une question piège). Répondre ne rapporte
+donc en moyenne que si la réponse est juste plus d'une fois sur deux.
 
-…
+| Validation v1 (100 questions) | Score | Justes | Fausses | Abstentions |
+|---|---|---|---|---|
+| Toujours INTROUVABLE | +0,23 | 0 | 0 | 100 |
+| Pipeline complet, premier prompt, sans porte (`val1_complet_sansporte`) | +0,135 | 37 | 39 | 15 |
+| Porte sur le score du reranker, meilleur seuil (0,9996) | +0,26 | presque aucune réponse | | |
+| Prompt corrigé + non-réponses converties (`val1_complet`) | +0,24 | 41 | 32 | 20 |
+| + vérification des chiffres et des aveux d'incertitude (simulé sur les mêmes réponses) | **+0,38** | 39 | 20 | 36 |
+
+**Pourquoi la porte ne marche pas.** Le score du reranker dit si le bon passage a été trouvé ; il l'est
+9 fois sur 10 (R@5 = 0,91). Mes erreurs viennent de la **génération** : le modèle a la bonne page
+mais lit mal un tableau, calcule faux ou devine la valeur d'un graphique. Le score est alors élevé
+quand même, et la courbe de calibration (`des_tests/calibration.png`) monte jusqu'à « toujours
+s'abstenir ». Un tel seuil revient à ne plus répondre : je ne l'ai pas gardé. La calibration ne
+retient désormais un seuil que s'il gagne au moins 2 questions sur 100.
+
+**Ce qui marche : vérifier la réponse elle-même**, sans appel supplémentaire au modèle :
+
+1. *Non-réponses* : « les extraits ne mentionnent pas… », « INTROUVABLE » au milieu d'une phrase,
+   « chiffre non explicitement donné » → INTROUVABLE (+0,05 en plus de la correction du prompt).
+2. *Ancrage des chiffres* : chaque nombre de la réponse doit figurer dans un des extraits fournis ou
+   dans la question, selon les règles de la notation officielle (arrondi de 0,5 %, « 2,6 millions »
+   = « 2 600 000 »). Sinon, le modèle l'a inventé ou mal calculé → INTROUVABLE (+0,09). Exemples :
+   val1-043 « diminué de 59 850 €/MW », val1-051 et val1-071 (pièges : 31,1 Mhl et 18 000 imprimeries
+   obtenus par un calcul faux). Coût : 2 réponses justes perdues sur 39 (val1-036, un écart
+   calculé ; val1-044).
+
+Limite : ces règles ont été mises au point sur la validation v1 ; je les mesure sur la validation v2
+pour vérifier qu'elles ne sont pas surajustées.
 
 ## 5. Où le système hallucine encore
 
