@@ -63,7 +63,10 @@ def assembler(gen, question, passages, reglages):
 NON_REPONSE = re.compile(
     r"(les |ces )?extraits (fournis )?(ne |n')(mentionne|contien|permett|precis|donne|fourni|indiqu|presente|traite)"
     r"|aucun(e)? (information|donnee|chiffre|mention|element|indication)"
-    r"|(ne sont|n'est) pas (mentionne|disponible|precise|indique|fourni|present)"
+    r"|(ne sont|n'est) pas (directement |explicitement |clairement |precisement )?"
+    r"(mentionne|disponible|precise|indique|fourni|present|calculable|donne)"
+    r"|(donnees|chiffres|informations|documents) (disponibles |fournis |de la cour des comptes |de l'insee )?"
+    r"(ne |n')(permett|distingu|precis|mention|fourni|indiqu|donne|couvr)"
     r"|pas d'information|impossible de (repondre|determiner|preciser)|je ne (peux|dispose) pas"
 )
 
