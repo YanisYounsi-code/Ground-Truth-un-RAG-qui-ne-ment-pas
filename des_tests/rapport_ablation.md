@@ -17,8 +17,8 @@ et passe les 97 pages scannées par Tesseract.
 |---|---|---|---|
 | Toujours INTROUVABLE | +0,23 | 0 % | 100 % |
 | RAG de base (palier 1 : BM25, chunks naïfs) | … (`runs/val1_rag_base_report.json`) | … | … |
-| Pipeline complet sans porte | … (`runs/val1_complet_sansporte_report.json`) | … | … |
-| **Pipeline complet avec porte** | … (`runs/val1_complet_report.json`) | … | … |
+| Pipeline complet, premier prompt, sans porte | +0,135 (`runs/val1_complet_sansporte_report.json`) | 43 % | 15 % |
+| **Pipeline final : prompt corrigé + vérification de la réponse** | **+0,38** (`runs/val1_complet_report.json`) | 22 % | 37 % |
 
 ## 2. Ce que chaque brique apporte à la recherche
 
@@ -80,7 +80,7 @@ donc en moyenne que si la réponse est juste plus d'une fois sur deux.
 | Pipeline complet, premier prompt, sans porte (`val1_complet_sansporte`) | +0,135 | 37 | 39 | 15 |
 | Porte sur le score du reranker, meilleur seuil (0,9996) | +0,26 | presque aucune réponse | | |
 | Prompt corrigé + non-réponses converties (`val1_complet`) | +0,24 | 41 | 32 | 20 |
-| + vérification des chiffres et des aveux d'incertitude (simulé sur les mêmes réponses) | **+0,38** | 39 | 20 | 36 |
+| + vérification des chiffres et des aveux d'incertitude (`val1_complet`, relancé le 10/11) | **+0,38** | 39 | 20 | 37 |
 
 **Pourquoi la porte ne marche pas.** Le score du reranker dit si le bon passage a été trouvé ; il l'est
 9 fois sur 10 (R@5 = 0,91). Mes erreurs viennent de la **génération** : le modèle a la bonne page
@@ -92,10 +92,10 @@ retient désormais un seuil que s'il gagne au moins 2 questions sur 100.
 **Ce qui marche : vérifier la réponse elle-même**, sans appel supplémentaire au modèle :
 
 1. *Non-réponses* : « les extraits ne mentionnent pas… », « INTROUVABLE » au milieu d'une phrase,
-   « chiffre non explicitement donné » → INTROUVABLE (+0,05 en plus de la correction du prompt).
+   « chiffre non explicitement donné » → INTROUVABLE (+0,06).
 2. *Ancrage des chiffres* : chaque nombre de la réponse doit figurer dans un des extraits fournis ou
    dans la question, selon les règles de la notation officielle (arrondi de 0,5 %, « 2,6 millions »
-   = « 2 600 000 »). Sinon, le modèle l'a inventé ou mal calculé → INTROUVABLE (+0,09). Exemples :
+   = « 2 600 000 »). Sinon, le modèle l'a inventé ou mal calculé → INTROUVABLE (+0,08 de plus). Exemples :
    val1-043 « diminué de 59 850 €/MW », val1-051 et val1-071 (pièges : 31,1 Mhl et 18 000 imprimeries
    obtenus par un calcul faux). Coût : 2 réponses justes perdues sur 39 (val1-036, un écart
    calculé ; val1-044).
