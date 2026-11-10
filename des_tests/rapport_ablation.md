@@ -2,8 +2,8 @@
 
 Yanis Younsi · dépôt YanisYounsi-code/Ground-Truth-un-RAG-qui-ne-ment-pas
 
-> Squelette à compléter avec les chiffres produits par `notebooks/paliers_1_2_colab.ipynb`.
-> Chaque `…` renvoie au fichier qui donne la valeur.
+> Chiffres produits par `notebooks/paliers_1_2_colab.ipynb` sur Colab T4 (10/11) ; rapports d'évaluation
+> officiels dans `des_tests/rapports/`. Soumission v1 : `submissions/v1/2026-11-10_1.json`.
 
 ## 1. Le pipeline complet
 
@@ -16,9 +16,9 @@ et passe les 97 pages scannées par Tesseract.
 | Système (validation v1, 100 questions) | Score de confiance | Hallucinations | Abstentions |
 |---|---|---|---|
 | Toujours INTROUVABLE | +0,23 | 0 % | 100 % |
-| RAG de base (palier 1 : BM25, chunks naïfs) | … (`runs/val1_rag_base_report.json`) | … | … |
-| Pipeline complet, premier prompt, sans porte | +0,135 (`runs/val1_complet_sansporte_report.json`) | 43 % | 15 % |
-| **Pipeline final : prompt corrigé + vérification de la réponse** | **+0,38** (`runs/val1_complet_report.json`) | 22 % | 37 % |
+| RAG de base (palier 1 : BM25 sur les pages, sans OCR) | −0,04 (`des_tests/rapports/val1_rag_base_report.json`) | 46 % | 26 % |
+| Pipeline complet, premier prompt, sans porte | +0,135 (`des_tests/rapports/val1_complet_sansporte_report.json`) | 43 % | 15 % |
+| **Pipeline final : prompt corrigé + vérification de la réponse** | **+0,38** (`des_tests/rapports/val1_complet_report.json`) | 22 % | 37 % |
 
 ## 2. Ce que chaque brique apporte à la recherche
 
@@ -62,12 +62,31 @@ Ce que j'en retiens :
 Au palier 1, la racinisation légère du tokeniseur a fait passer le R@10 du BM25 sur les pages de
 0,636 à 0,727 (`des_tests/journal.md`).
 
-## 3. Parsing : 30 pages annotées
+## 3. Parsing : 22 pages annotées, 42 valeurs
 
-`des_tests/parsing_resultats.md` : part des valeurs retrouvées dans le texte extrait, et part
-retrouvée sur la même ligne que son libellé, pour PyMuPDF brut, PyMuPDF + tableaux et Tesseract.
+Pages de preuve de la validation (10 tableaux, 10 graphiques, 10 scans ; 8 pages sans valeur
+lisible sont écartées). Pour chaque valeur : la valeur exacte et son libellé (le nom de la ligne du
+tableau, du segment du graphique). Libellés repris de la citation source de la validation, puis
+vérifiés à la main sur l'image de la page (`runs/parsing_png/`). Résultat : `des_tests/parsing_resultats.md`.
 
-…
+| Parseur | Tableau : valeurs / liens | Graphique : valeurs / liens | Scan : valeurs / liens |
+|---|---|---|---|
+| PyMuPDF brut | 100 % / 0 % | 43 % / 0 % | 0 % / 0 % |
+| **PyMuPDF + tableaux en Markdown** | 100 % / **85 %** | 43 % / 0 % | 0 % / 0 % |
+| Tesseract (OCR, français) | 80 % / 40 % | 0 % / 0 % | **100 % / 53 %** |
+
+*Valeurs* : la valeur est dans le texte extrait. *Liens* : elle est sur la même ligne que son libellé.
+
+- **Sur les tableaux, PyMuPDF trouve tous les chiffres mais casse le lien avec leur ligne** : il lit
+  colonne par colonne, et « 11,3 » se retrouve loin de « Vin ». Réécrits en Markdown, 85 % des
+  chiffres sont sur la ligne de leur libellé : c'est ce qui permet au modèle de savoir à quoi
+  correspond un nombre. D'où le choix de `pymupdf_tables`, même si la recherche ne change pas
+  (section 2) : le gain est pour la lecture, pas pour trouver la page.
+- **Sur les scans, seul l'OCR lit quelque chose** ; il est appliqué uniquement aux pages sans texte
+  (moins de 50 caractères), car sur les pages normales il est moins bon que PyMuPDF (80 % contre 100 %
+  sur les tableaux) et beaucoup plus lent.
+- **Les graphiques restent un angle mort** : moins de la moitié des valeurs sont imprimées en texte,
+  et jamais à côté de leur libellé. Sur ces questions, la bonne stratégie est l'abstention (section 4).
 
 ## 4. Abstention : la porte sur le score du reranker ne marche pas, la vérification de la réponse oui
 

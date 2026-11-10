@@ -8,7 +8,11 @@
   "faits": [
    {
     "valeur": "16",
-    "libelle": ""
+    "libelle": "Europe du Sud"
+   },
+   {
+    "valeur": "7",
+    "libelle": "Europe du Sud"
    }
   ],
   "verifie": false
@@ -22,11 +26,11 @@
   "faits": [
    {
     "valeur": "10,9",
-    "libelle": ""
+    "libelle": "Vin"
    },
    {
-    "valeur": "28,7 %",
-    "libelle": ""
+    "valeur": "-28,7",
+    "libelle": "Vin"
    }
   ],
   "verifie": false
@@ -39,8 +43,12 @@
   "indice": "Rural à habitat très dispersé 1 992 1 655 411 12 10 2,9 101",
   "faits": [
    {
-    "valeur": "101 %",
-    "libelle": ""
+    "valeur": "101",
+    "libelle": "Rural à habitat très dispersé"
+   },
+   {
+    "valeur": "1 992",
+    "libelle": "Rural à habitat très dispersé"
    }
   ],
   "verifie": false
@@ -53,8 +61,12 @@
   "indice": "Livraison 9,6 6 46 14",
   "faits": [
    {
-    "valeur": "46 %",
-    "libelle": ""
+    "valeur": "46",
+    "libelle": "Livraison"
+   },
+   {
+    "valeur": "9,6",
+    "libelle": "Livraison"
    }
   ],
   "verifie": false
@@ -67,8 +79,12 @@
   "indice": "Tableau n° 3, ligne « Prime unitaire (€/MW lauréat) » : 14 450 10 530 8 930 11 885 35 215 -115 60 850 40 575",
   "faits": [
    {
-    "valeur": "20 275",
-    "libelle": ""
+    "valeur": "60 850",
+    "libelle": "Prime unitaire"
+   },
+   {
+    "valeur": "40 575",
+    "libelle": "Prime unitaire"
    }
   ],
   "verifie": false
@@ -81,8 +97,12 @@
   "indice": "Figure 3, ligne Autres pays de l'UE27 : 32 (milliers) ; -8 ; 20 ; 29 ; 46 ; 54",
   "faits": [
    {
-    "valeur": "32 000",
-    "libelle": ""
+    "valeur": "32",
+    "libelle": "Autres pays de l'UE27"
+   },
+   {
+    "valeur": "-8",
+    "libelle": "Autres pays de l'UE27"
    }
   ],
   "verifie": false
@@ -96,11 +116,11 @@
   "faits": [
    {
     "valeur": "246 600",
-    "libelle": ""
+    "libelle": "10 ou plus"
    },
    {
-    "valeur": "0,9 %",
-    "libelle": ""
+    "valeur": "0,9",
+    "libelle": "10 ou plus"
    }
   ],
   "verifie": false
@@ -113,8 +133,12 @@
   "indice": "Tableau 4 : « Autres pays d'Europe 24,3 » ; « Ensemble 33,5 » (part de naturalisés parmi les immigrés, en %)",
   "faits": [
    {
-    "valeur": "24,3 %",
-    "libelle": ""
+    "valeur": "24,3",
+    "libelle": "Autres pays d'Europe"
+   },
+   {
+    "valeur": "33,5",
+    "libelle": "Ensemble"
    }
   ],
   "verifie": false
@@ -127,8 +151,12 @@
   "indice": "2025 3 786 492 637 1 848 865 319 74 842 359",
   "faits": [
    {
+    "valeur": "3 786",
+    "libelle": "2025"
+   },
+   {
     "valeur": "492 637",
-    "libelle": ""
+    "libelle": "2025"
    }
   ],
   "verifie": false
@@ -142,7 +170,11 @@
   "faits": [
    {
     "valeur": "11,3",
-    "libelle": ""
+    "libelle": "Vin"
+   },
+   {
+    "valeur": "4,2",
+    "libelle": "Vin"
    }
   ],
   "verifie": false
@@ -165,7 +197,7 @@
   "faits": [
    {
     "valeur": "2,6 %",
-    "libelle": ""
+    "libelle": "Rien, je refuse de faire des efforts"
    }
   ],
   "verifie": false
@@ -179,11 +211,11 @@
   "faits": [
    {
     "valeur": "133 M€",
-    "libelle": ""
+    "libelle": "PROQCIMA"
    },
    {
     "valeur": "19 %",
-    "libelle": ""
+    "libelle": "PROQCIMA"
    }
   ],
   "verifie": false
@@ -215,7 +247,11 @@
   "faits": [
    {
     "valeur": "322",
-    "libelle": ""
+    "libelle": "Administrations locales"
+   },
+   {
+    "valeur": "591",
+    "libelle": "Administration centrale"
    }
   ],
   "verifie": false
@@ -244,12 +280,7 @@
   "type": "graphique",
   "qid": "val1-055",
   "indice": "Figure 2 : la barre verte « Évolution annuelle » de 2020 (≈5,5 %) est de loin la plus haute de la série 2012-2023.",
-  "faits": [
-   {
-    "valeur": "2020",
-    "libelle": ""
-   }
-  ],
+  "faits": [],
   "verifie": false
  },
  {
@@ -261,7 +292,11 @@
   "faits": [
    {
     "valeur": "28 %",
-    "libelle": ""
+    "libelle": "Atteintes humaines"
+   },
+   {
+    "valeur": "24 %",
+    "libelle": "Atteintes physiques"
    }
   ],
   "verifie": false
@@ -275,11 +310,11 @@
   "faits": [
    {
     "valeur": "22 700",
-    "libelle": ""
+    "libelle": "dénombre"
    },
    {
     "valeur": "23 400",
-    "libelle": ""
+    "libelle": "2015"
    }
   ],
   "verifie": false
@@ -293,11 +328,11 @@
   "faits": [
    {
     "valeur": "2 830",
-    "libelle": ""
+    "libelle": "Rural à habitat très dispersé"
    },
    {
     "valeur": "204",
-    "libelle": ""
+    "libelle": "Grands centres urbains"
    }
   ],
   "verifie": false
@@ -311,11 +346,11 @@
   "faits": [
    {
     "valeur": "195",
-    "libelle": ""
+    "libelle": "ménages"
    },
    {
-    "valeur": "29",
-    "libelle": ""
+    "valeur": "124",
+    "libelle": "ménages"
    }
   ],
   "verifie": false
@@ -329,11 +364,11 @@
   "faits": [
    {
     "valeur": "5 699",
-    "libelle": ""
+    "libelle": "prénoms mixtes"
    },
    {
     "valeur": "536",
-    "libelle": ""
+    "libelle": "bébés"
    }
   ],
   "verifie": false
@@ -347,11 +382,11 @@
   "faits": [
    {
     "valeur": "61 %",
-    "libelle": ""
+    "libelle": "2010"
    },
    {
-    "valeur": "80 %",
-    "libelle": ""
+    "valeur": "84 %",
+    "libelle": "2023"
    }
   ],
   "verifie": false
@@ -365,7 +400,7 @@
   "faits": [
    {
     "valeur": "36 %",
-    "libelle": ""
+    "libelle": "Aide de base"
    }
   ],
   "verifie": false
@@ -379,11 +414,11 @@
   "faits": [
    {
     "valeur": "65 940",
-    "libelle": ""
+    "libelle": "2025"
    },
    {
     "valeur": "8 007",
-    "libelle": ""
+    "libelle": "1946"
    }
   ],
   "verifie": false
@@ -396,12 +431,12 @@
   "indice": "En 2022, en France métropolitaine, le fioul domestique est la source principale de chauffage de 8,5 % des résidences principales, soit 2,6 millions.",
   "faits": [
    {
-    "valeur": "2,6 millions",
-    "libelle": ""
+    "valeur": "8,5 %",
+    "libelle": "résidences principales"
    },
    {
-    "valeur": "8,5 %",
-    "libelle": ""
+    "valeur": "2,6 millions",
+    "libelle": "soit"
    }
   ],
   "verifie": false
