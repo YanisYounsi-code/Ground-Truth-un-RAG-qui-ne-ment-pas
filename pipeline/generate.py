@@ -21,8 +21,10 @@ SYSTEME = (
     "Règles :\n"
     "1. Si les extraits ne permettent pas de répondre avec certitude, réponds exactement : INTROUVABLE\n"
     "2. Recopie les chiffres exactement comme dans les extraits, avec leur unité et leur année.\n"
-    "3. Si la question affirme quelque chose que les extraits contredisent, commence par "
-    "« En réalité, » et corrige l'affirmation avec les chiffres des extraits.\n"
+    "3. Uniquement si la question affirme explicitement un fait que les extraits contredisent "
+    "(par exemple une baisse alors que les extraits montrent une hausse), commence par « En réalité, » "
+    "et corrige l'affirmation avec les chiffres des extraits. Si les extraits ne contiennent simplement "
+    "pas l'information, réponds INTROUVABLE, sans rien ajouter.\n"
     "4. Si deux extraits donnent des chiffres différents pour la même chose, retiens le plus récent "
     "(date de publication la plus tardive).\n"
     "5. Réponds en une à trois phrases, dans la langue de la question.\n"
@@ -57,11 +59,32 @@ def assembler(gen, question, passages, reglages):
     return retenus
 
 
+# Formulations par lesquelles le modèle avoue ne pas trouver l'information (vues sur la validation v1)
+NON_REPONSE = re.compile(
+    r"(les |ces )?extraits (fournis )?(ne |n')(mentionne|contien|permett|precis|donne|fourni|indiqu|presente|traite)"
+    r"|aucun(e)? (information|donnee|chiffre|mention|element|indication)"
+    r"|(ne sont|n'est) pas (mentionne|disponible|precise|indique|fourni|present)"
+    r"|pas d'information|impossible de (repondre|determiner|preciser)|je ne (peux|dispose) pas"
+)
+
+
+def _sans_accents(texte):
+    import unicodedata
+
+    texte = unicodedata.normalize("NFKD", texte.lower().replace("\u2019", "'"))
+    return "".join(c for c in texte if not unicodedata.combining(c))
+
+
 def lire_reponse(brut, retenus):
     """Sépare la réponse de la ligne SOURCES et ne garde que les citations présentes dans le contexte."""
     texte = brut.strip()
     reponse = re.split(r"\n?\s*SOURCES\s*:", texte, flags=re.IGNORECASE)[0].strip()
+    reponse = reponse.replace("**", "")  # gras Markdown : inutile pour le juge, gêne la lecture des chiffres
     if reponse.strip(" .").upper() == ABSTENTION or texte.upper().startswith(ABSTENTION):
+        return ABSTENTION, []
+    if NON_REPONSE.search(_sans_accents(reponse[:300])):
+        # Le modèle explique qu'il n'a pas l'information au lieu d'écrire INTROUVABLE : noté comme une
+        # réponse fausse (-1) alors qu'une abstention vaut 0 ou +1. On la convertit en abstention.
         return ABSTENTION, []
     disponibles = {(p["doc_id"], p["page"]) for p in retenus}
     citations = []
