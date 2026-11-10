@@ -66,8 +66,10 @@ Au palier 1, la racinisation légère du tokeniseur a fait passer le R@10 du BM2
 
 Pages de preuve de la validation (10 tableaux, 10 graphiques, 10 scans ; 8 pages sans valeur
 lisible sont écartées). Pour chaque valeur : la valeur exacte et son libellé (le nom de la ligne du
-tableau, du segment du graphique). Libellés repris de la citation source de la validation, puis
-vérifiés à la main sur l'image de la page (`runs/parsing_png/`). Résultat : `des_tests/parsing_resultats.md`.
+tableau, du segment du graphique). Libellés repris de la citation source de la validation. Chaque
+valeur a été vérifiée : 38 sont retrouvées telles quelles dans le texte d'au moins un parseur, les 4
+qui ne figurent que dans l'image d'un graphique (cc-informatique-quantique p.39 et p.88) ont été
+lues sur l'image de la page. Résultat : `des_tests/parsing_resultats.md`.
 
 | Parseur | Tableau : valeurs / liens | Graphique : valeurs / liens | Scan : valeurs / liens |
 |---|---|---|---|
@@ -122,10 +124,40 @@ retient désormais un seuil que s'il gagne au moins 2 questions sur 100.
 Limite : ces règles ont été mises au point sur la validation v1 ; je les mesure sur la validation v2
 pour vérifier qu'elles ne sont pas surajustées.
 
-## 5. Où le système hallucine encore
+## 5. Où le système se trompe encore
 
-D'après `des_tests/echecs.md` et les détails par type des rapports d'évaluation : …
+22 réponses à −1 sur 100 avec le pipeline final (`des_tests/rapports/val1_complet_report.json`).
+Dans presque tous les cas, la page de preuve était dans le contexte : **ce sont des erreurs de
+lecture, pas de recherche**.
 
-## 6. Les briques qui ne servent à rien
+| Cause | Questions | Exemple |
+|---|---|---|
+| Mauvaise case d'un tableau (le bon chiffre est dans l'extrait) | 7 : 020, 039, 043, 072, 075, 083, 100 | val1-100 : la moyenne 1 043 au lieu de la médiane 1 514, sur la même ligne |
+| Graphique : la valeur n'est pas dans le texte, le modèle devine | 4 : 006, 041, 055, 060 | val1-006 : 2024 au lieu de 2023 |
+| Synthèse incomplète (il manque des éléments de la liste) | 3 : 004, 068, 079 | val1-004 : 3 leçons sur 4, dont une inventée |
+| Multi-doc : un seul des deux documents utilisé | 2 : 040, 058 | val1-040 : le chiffre du rapport algues vertes, pas celui du rapport PAC |
+| Mauvais passage ou réponse partielle | 4 : 009, 064, 065, 086 | val1-009 : 23 M€ juste, mais il manque les 2,45 Md€ |
+| Piège non détecté | 2 : 069, 093 | val1-093 : question sur 2025, le modèle répond avec 2024 |
 
-…
+La vérification des chiffres ne peut rien contre la première cause : le chiffre faux est bien dans
+l'extrait, simplement pas à la bonne case. C'est la limite principale d'un modèle de 3 milliards de
+paramètres face à un tableau. Pistes pour le palier 3, sans changer de générateur :
+- utiliser un 2ᵉ appel (le budget en autorise 4) pour faire relire la réponse : « quelle ligne et
+  quelle colonne du tableau donnent ce chiffre ? » ;
+- sur les questions de type graphique (mots « graphique », « courbe », « quelle année a vu le plus… »),
+  exiger que la valeur soit écrite dans l'extrait, sinon s'abstenir ;
+- multi-doc : garder au moins un passage de chacun des deux meilleurs documents.
+
+## 6. Les briques qui ne servent à rien (ou presque)
+
+| Brique | Effet mesuré | Décision |
+|---|---|---|
+| Porte d'abstention sur le score du reranker | meilleur seuil = presque tout refuser (section 4) | **retirée** (`threshold: null`) |
+| BM25 dans la recherche hybride | +0,006 de R@5 par rapport au dense seul | gardée : coûte quelques secondes, utile sur les noms et chiffres exacts |
+| En-tête de contexte dans les chunks | −0,026 de R@5, +0,018 de MRR (2 questions sur 77) | gardée par défaut, dans le bruit ; à revoir sur la validation v2 |
+| Tableaux en Markdown, pour la recherche | 0 sur R@5 | gardés : +85 points de liens valeur-libellé (section 3), utiles à la lecture |
+| OCR sur les pages qui ont déjà du texte | moins bon que PyMuPDF (80 % contre 100 % des valeurs sur les tableaux) | non utilisé : OCR seulement sous 50 caractères |
+
+Ce qui compte vraiment : l'OCR des scans (+11 points de R@5), le reranker (+11 points de MRR), la
+recherche dense (+5 points de R@5) et, côté génération, la vérification de la réponse (+0,14 de
+score de confiance).

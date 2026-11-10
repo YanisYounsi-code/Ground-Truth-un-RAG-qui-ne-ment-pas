@@ -15,7 +15,7 @@
     "libelle": "Europe du Sud"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2062",
@@ -33,7 +33,7 @@
     "libelle": "Vin"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2082",
@@ -51,7 +51,7 @@
     "libelle": "Rural à habitat très dispersé"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2069",
@@ -69,7 +69,7 @@
     "libelle": "Livraison"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-effacements-electricite",
@@ -87,7 +87,7 @@
     "libelle": "Prime unitaire"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2107",
@@ -105,7 +105,7 @@
     "libelle": "Autres pays de l'UE27"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2046",
@@ -123,7 +123,7 @@
     "libelle": "10 ou plus"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2076",
@@ -141,7 +141,7 @@
     "libelle": "Ensemble"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-difficultes-entreprises",
@@ -159,7 +159,7 @@
     "libelle": "2025"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2086",
@@ -177,7 +177,7 @@
     "libelle": "Vin"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-effacements-electricite",
@@ -200,7 +200,7 @@
     "libelle": "Rien, je refuse de faire des efforts"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-informatique-quantique",
@@ -218,7 +218,7 @@
     "libelle": "PROQCIMA"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2039",
@@ -254,7 +254,7 @@
     "libelle": "Administration centrale"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2059",
@@ -299,7 +299,7 @@
     "libelle": "Atteintes physiques"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2036",
@@ -317,7 +317,7 @@
     "libelle": "2015"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2103",
@@ -335,7 +335,7 @@
     "libelle": "Grands centres urbains"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2103",
@@ -353,7 +353,7 @@
     "libelle": "ménages"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2127",
@@ -371,7 +371,7 @@
     "libelle": "bébés"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-vaccination-synthese",
@@ -389,7 +389,7 @@
     "libelle": "2023"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "cc-pac-synthese",
@@ -403,7 +403,7 @@
     "libelle": "Aide de base"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2127",
@@ -421,7 +421,7 @@
     "libelle": "1946"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2088",
@@ -439,7 +439,7 @@
     "libelle": "soit"
    }
   ],
-  "verifie": false
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2041",

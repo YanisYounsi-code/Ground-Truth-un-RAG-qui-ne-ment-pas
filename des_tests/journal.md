@@ -7,3 +7,14 @@ Une ligne par essai. Recherche mesurée sur les 77 questions de validation v1 qu
 |---|---|---|---|---|---|---|
 | 28/10 | BM25 maison sur les pages, mots vides | 0,578 | 0,636 | 0,437 | 0,446 | identique à bm25s ; baseline du kit : R@5 0,558 |
 | 03/11 | + racinisation légère + nombres recollés | 0,610 | 0,727 | 0,454 | 0,473 | +9 points de R@10 : « pharmacies » rejoint « pharmacie » |
+| 10/11 | Pipeline complet (Colab T4) : hybride BM25 + bge-m3, RRF, reranker, chunks contextuels, OCR | 0,909 | 0,948 | 0,799 | 0,787 | index 30 min 22 s ; ablation : `rapport_ablation.md` section 2 |
+
+## Génération (score de confiance, validation v1, 100 questions)
+
+| Date | Changement | Score | Hallucinations | Remarque |
+|---|---|---|---|---|
+| 10/11 | RAG de base (BM25 pages, sans OCR) | −0,04 | 46 % | « toujours INTROUVABLE » fait +0,23 |
+| 10/11 | Pipeline complet, premier prompt | +0,135 | 43 % | « En réalité » mis partout ; la porte sur le reranker ne sépare rien |
+| 10/11 | Règle « En réalité » restreinte + non-réponses → INTROUVABLE | +0,24 | 36 % | 10 « les extraits ne mentionnent pas » convertis |
+| 10/11 | + vérification des chiffres et des aveux d'incertitude | +0,38 | 22 % | 6,3 s par question ; soumission v1 `2026-11-10_1` |
+

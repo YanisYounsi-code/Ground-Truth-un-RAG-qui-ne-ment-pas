@@ -70,6 +70,10 @@ NON_REPONSE = re.compile(
     r"|pas d'information|impossible de (repondre|determiner|preciser)|je ne (peux|dispose) pas"
     r"|(pas|non) (explicitement|directement|precisement)"  # le modèle avoue deviner (« chiffre non explicitement donné »)
     r"|introuvable"  # « INTROUVABLE » écrit au milieu d'une réponse partielle
+    # questions en anglais (palier 3) : mêmes aveux, en anglais
+    r"|(the )?(extracts|excerpts|documents|data|sources) (provided )?(do|does) not (mention|contain|specify|provide|indicate|allow|state|give)"
+    r"|no (information|data|figure|mention)|not (explicitly|directly|clearly) (stated|mentioned|given|specified|provided)"
+    r"|(cannot|can't|unable to) (be )?(determine|answer|find|specif)|is not (mentioned|available|specified|provided)"
 )
 
 
@@ -92,8 +96,20 @@ def chiffres_non_ancres(reponse, retenus, question):
     connus = set()
     for raw, avec_unite in extract_numbers(" ".join(p["text"] for p in retenus) + " " + question):
         connus.update((raw, avec_unite))
-    return [raw for raw, avec_unite in extract_numbers(reponse)
-            if not any(_close(raw, c) or _close(avec_unite, c) for c in connus)]
+    dans_reponse = extract_numbers(reponse)
+    ancres = [(r, a) for r, a in dans_reponse if any(_close(r, c) or _close(a, c) for c in connus)]
+    # Palier 3 : les révisions et comparaisons demandent un écart (« 4 040 puis 4 150 €, soit +110 € »).
+    # On l'accepte s'il se calcule à partir de deux chiffres de la même réponse, eux-mêmes ancrés :
+    # le modèle montre alors son calcul, et on peut le vérifier.
+    ecarts = set()
+    valeurs = sorted({v for r, a in ancres for v in (r, a)})
+    for i, x in enumerate(valeurs):
+        for y in valeurs[i + 1:]:
+            ecarts.add(y - x)
+            if x:
+                ecarts.add(abs(y - x) / abs(x) * 100)  # variation en %
+    return [r for r, a in dans_reponse
+            if (r, a) not in ancres and not any(_close(r, e) or _close(a, e) for e in ecarts)]
 
 
 def lire_reponse(brut, retenus):

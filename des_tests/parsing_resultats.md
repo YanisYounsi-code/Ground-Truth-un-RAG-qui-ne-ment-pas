@@ -1,6 +1,6 @@
 # Comparaison des parseurs
 
-22 pages annotées, 42 valeurs. Valeurs : part des valeurs retrouvées dans le texte extrait. Liens : part retrouvée sur la même ligne que son libellé. ATTENTION : 22 pages pas encore vérifiées à la main.
+22 pages annotées, 42 valeurs. Valeurs : part des valeurs retrouvées dans le texte extrait. Liens : part retrouvée sur la même ligne que son libellé.
 
 | Parseur | tableau : valeurs / liens | graphique : valeurs / liens | scan : valeurs / liens | total : valeurs / liens |
 |---|---|---|---|---|
