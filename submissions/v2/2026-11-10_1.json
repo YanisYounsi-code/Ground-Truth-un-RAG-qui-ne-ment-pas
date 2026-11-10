@@ -1,0 +1,1432 @@
+{
+ "phase": "v2",
+ "submitted_at": "2026-11-10T17:09:10+01:00",
+ "commit": "7617d94916160e46882f5ee0ab433bfd761539cb",
+ "predictions": [
+  {
+   "qid": "cls2-001",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-002",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-003",
+   "answer": "En réalité, les micro-entrepreneurs du transport et de l’entreposage avaient un taux de survie à trois ans en 56 % en 2020, contre une moyenne nationale de 60,1 % pour tous les micro-entrepreneurs.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2069",
+     "page": 4
+    },
+    {
+     "doc_id": "insee-ip2097",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-004",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-005",
+   "answer": "En 2023, le taux de pauvreté des familles composées d'un couple et d'au moins trois enfants, avec la personne de référence de moins de 65 ans, s'élève à 25,8 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2063",
+     "page": 4
+    },
+    {
+     "doc_id": "insee-ip2063",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-006",
+   "answer": "En réalité, les exportations de services en France ont décéléré fortement en 2024 (+2,3 % après +5,2 %), mais elles n’ont pas \"presque stagné\" comme initialement rapporté dans les données antérieures. Les chiffres de l’Insee montrent une baisse marquée de leur croissance par rapport à 2023.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2105",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2053",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-007",
+   "answer": "L’expérimentation du plafonnement des loyers à Paris aura duré 7 ans, 4 mois et 24 jours entre son lancement le 1er juillet 2019 et sa fin prévue le 25 novembre 2026.",
+   "citations": [
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 89
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 28
+    }
+   ]
+  },
+  {
+   "qid": "cls2-008",
+   "answer": "La Cour des comptes souhaite renforcer le rôle du secrétariat général à la planification écologique pour mieux préparer les arbitrages interministériels, notamment via des revues sectorielles et une intégration claire des besoins d’investissement dans la SPAFTE. Elle recommande aussi d’évaluer systématiquement ex post les lois et stratégies écologiques pour mesurer leur efficacité réelle et ajuster les plans.\n\nElle propose également de compléter le plan de transformation écologique de l’État en associant des financements prévisionnels (jusqu’en 2030) et d’expliciter les besoins d’investissement publics et privés, leurs leviers d’action et les financements nécessaires, conformément au code de l’énergie.\n\nEnfin, elle insiste sur la nécessité de lier explicitement les besoins d’investissement aux financements correspondants pour renforcer la crédibilité de la trajectoire.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 112
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 86
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 107
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 33
+    }
+   ]
+  },
+  {
+   "qid": "cls2-009",
+   "answer": "Entre 2011 et 2019, le grand type de dépenses des ménages qui a le plus augmenté chaque année en moyenne à prix constants est les transports avec une croissance annuelle moyenne de +4 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2110",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2056",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-010",
+   "answer": "En 2024, la France a affiché un besoin de financement vis-à-vis du reste du monde, comme le montre le déficit public (hors crédits d’impôt) de 1 652,8 Md€ (ratio de 56,3 points de PIB), bien que ce soit une légère baisse par rapport à 2025.\n\nLes comptes nationaux publiés en 2025 et 2026 ne fournissent pas explicitement de données sur le solde de la balance courante ou le besoin de financement extérieur pour 2024, donc INTROUVABLE pour cette comparaison directe.",
+   "citations": [
+    {
+     "doc_id": "cc-rspfp-2026",
+     "page": 35
+    },
+    {
+     "doc_id": "cc-rspfp-2026-synthese",
+     "page": 10
+    }
+   ]
+  },
+  {
+   "qid": "cls2-011",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-012",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-013",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-014",
+   "answer": "Entre 2022 et 2024, les dépenses d’intervention favorables à l’environnement exécutées par l’État ont diminué de 7 points, passant de 20,8 Md€ à 17,7 Md€.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 89
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 177
+    }
+   ]
+  },
+  {
+   "qid": "cls2-015",
+   "answer": "En réalité, l'écart salarial moyen entre femmes et hommes a légèrement diminué en 2024 par rapport à 2023, passant de 19,1 % à 19,1 % (2023) à 19,1 % (2024) dans les extraits, mais avec une réduction de 0,7 point en 2023 et 0,6 point en 2024 selon les données corrigées. Les chiffres des deux années restent identiques dans les extraits fournis, mais l'évolution annuelle montre une baisse progressive de l'écart.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2067",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2102",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-016",
+   "answer": "En 2024, l'Insee annonçait une hausse de 1,0 % en volume de la consommation des ménages dans ses bilans publiés en mai 2025 ([insee-ip2053 p.2]). Dans ses publications consacrées à 2024 (juin 2025), il retient également 1,0 % ([insee-ip2056 p.1]).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2053",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2056",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-017",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-018",
+   "answer": "En 2024, les familles monoparentales (référence de moins de 65 ans) avaient des dépenses annuelles nettes moyennes de 8 000 euros pour le logement et des revenus annuels moyens de 36 900 euros.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2128",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2117",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-019",
+   "answer": "La hausse du nombre d’entreprises ayant une réelle activité économique en Bretagne entre 2014 et 2022 s’élève à 40,6 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2045",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-020",
+   "answer": "D'après l'Insee, les foyers qui font le plus appel aux services à la personne comme une femme de ménage, une nounou ou un auxiliaire de vie sont ceux des ménages aisés (notamment les 10 % les plus riches), avec 40 % de recours en 2019, et ceux des personnes âgées de 80 ans ou plus, dont 68 % des ménages supérieurs au 9e décile utilisent ces services.\n\nÀ l’inverse, les foyers qui y font le moins appel sont les familles monoparentales (taux inférieur à 11,2 % dans certaines régions comme La Réunion) et les jeunes ménages sans enfants, où les besoins sont moins marqués.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2042",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-021",
+   "answer": "En réalité, les locataires du parc social n’ont pas connu une baisse significative du taux d’effort net, contrairement à l’ensemble des ménages, car leur taux d’effort brut a légèrement diminué de –0,1 point entre 2014 et 2024.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2128",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2128",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-022",
+   "answer": "Les chiffres actualisés de l’Insee montrent que les grossistes ont un léger rebond en volume en 2024, avec une croissance de +0,5 % sur l’année, bien que les ventes mensuelles moyennes aient été quasi stables (+0,1 % au T1 2025 par rapport au T4 2024). Le rebond est notamment porté par les centrales d’achat (+7,4 % en volume) et certains secteurs comme les produits pharmaceutiques ou les ordinateurs.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2058",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2058",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-023",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-024",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-025",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-026",
+   "answer": "En 2025, les visiteurs étrangers ont dépensé 77,5 milliards d’euros en France, avec une hausse de +7,8 % par rapport à l’année précédente.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2110",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2056",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-027",
+   "answer": "Entre 2012 et 2024, le nombre de chercheurs issus d’autres organismes de recherche (hors CNRS) dans les UMR co-réalisées par le CNRS a augmenté de 29 %.",
+   "citations": [
+    {
+     "doc_id": "cc-umr",
+     "page": 69
+    },
+    {
+     "doc_id": "cc-umr",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "qid": "cls2-028",
+   "answer": "Le prix de clearing de l'appel d'offres 2025 pour les flexibilités bas-carbone est de 28 863 €/MW.",
+   "citations": [
+    {
+     "doc_id": "cc-effacements-electricite",
+     "page": 91
+    },
+    {
+     "doc_id": "cc-effacements-electricite",
+     "page": 88
+    }
+   ]
+  },
+  {
+   "qid": "cls2-029",
+   "answer": "Selon l’Insee, en 2024, 76 % du volume de travail de la fonction publique territoriale reposait sur des fonctionnaires.\nLa Cour des comptes indique que le taux de cotisation employeur à la CNRACL pour les fonctionnaires territoriaux en 2025 était de 34,65 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2101",
+     "page": 1
+    },
+    {
+     "doc_id": "cc-finances-locales-2026",
+     "page": 128
+    }
+   ]
+  },
+  {
+   "qid": "cls2-030",
+   "answer": "En 2022, la recherche française comptait 131 124 personnels de recherche (dont 72 511 enseignants-chercheurs et 52 017 chercheurs des ONR).\nEn 2024, les laboratoires mixtes rattachés au CNRS employaient environ 62 000 personnels de recherche (chercheurs, enseignants-chercheurs, ingénieurs et techniciens).",
+   "citations": [
+    {
+     "doc_id": "cc-umr",
+     "page": 27
+    },
+    {
+     "doc_id": "cc-umr",
+     "page": 68
+    }
+   ]
+  },
+  {
+   "qid": "cls2-031",
+   "answer": "En 2025, les services marchands non financiers comptent 8,1 millions d’ETP, représentant 36,8 % de l’emploi total.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2112",
+     "page": 4
+    },
+    {
+     "doc_id": "insee-ip2112",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-032",
+   "answer": "En 2023, le taux de pauvreté monétaire était de 14,4 % (soit +0,9 point par rapport à 2022), avec 15,4 % en 2024, au plus haut depuis 1996, et 9,8 millions de personnes en dessous du seuil de pauvreté en 2024 (contre une estimation de 11,2 millions en 2021 sur un champ élargi). En revanche, le niveau de vie médian a progressé de 1,8 % en euros constants en 2024 (+3,8 % en euros courants), contre 1,0 % en 2023, tandis que l’intensité de la pauvreté a légèrement augmenté (+0,5 point), passant à 19,7 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2063",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2117",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2117",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2117",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-033",
+   "answer": "En 2025, parmi les entreprises ne utilisant pas l’IA, 71 % citent le manque d’utilité pour l’entreprise comme principale raison, surtout chez les petites structures (moins de 50 salariés). Le manque d’expertise est aussi un frein majeur, avec 54 % des entreprises de 250 salariés ou plus l’énonçant comme obstacle principal.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2120",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2120",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-034",
+   "answer": "En 2025, les céréales ont contribué à hauteur de 2,0 points à la variation de la production agricole totale hors subventions, tandis que les vins (hors champagne) ont enregistré une hausse de 3,1 % pour les vins d’appellation et une baisse de 3,0 % pour les vins sans appellation. Le chiffre exact de la valeur ajoutée ou de la contribution financière des vignes n’est pas précisé dans les extraits fournis pour comparaison directe avec les céréales.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2116",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2116",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-035",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-036",
+   "answer": "En réalité, la baisse de l’empreinte carbone de la France en 2023 a été révisée à -6,1 % après une première estimation de -4,1 % dans l’édition précédente.\n\nLes révisions ont été liées aux données révisées d’Eurostat, notamment pour les importations agricoles, réduisant l’empreinte à 583 Mt CO₂ eq (contre 644 Mt CO₂ eq initialement estimés).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2077",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2077",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-037",
+   "answer": "En 2024, les usines ont dépensé 75 millions d’euros pour équiper leurs installations en pompes à chaleur, soit une hausse de 92 % par rapport à l’année précédente.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2124",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2071",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-038",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-039",
+   "answer": "En 2025, la France se classe 13ᵉ dans le Global Innovation Index de l’OMPI, tandis que l’Allemagne occupe le 11ᵉ rang.",
+   "citations": [
+    {
+     "doc_id": "cc-recherche-entreprises",
+     "page": 142
+    },
+    {
+     "doc_id": "cc-umr",
+     "page": 11
+    }
+   ]
+  },
+  {
+   "qid": "cls2-040",
+   "answer": "En réalité, le prix de l’électricité pour les exploitations agricoles a diminué en 2025, avec une baisse de -9,1% (volonté de cohérence avec les données agrégées de l’Insee Première n°2116, qui mentionne une baisse générale des prix de l’énergie, incluant l’électricité).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2116",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2086",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-041",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-042",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-043",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-044",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-045",
+   "answer": "En réalité, les extraits montrent une croissance minimale ou nulle entre 2012 et 2013 pour l'État et les hôpitaux, tandis que les collectivités locales ont vu leurs effectifs augmenter de 0,5 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2052",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2094",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-046",
+   "answer": "En 2021, 55 % des personnes de 85 ans ou plus à Paris habitent seules dans leur logement, tandis que 11 % vivent en Ehpad ou institution.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2040",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2040",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-047",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-048",
+   "answer": "La Cour des comptes propose plusieurs améliorations pour mieux détecter et orienter les entreprises en difficulté :\n- Anticiper la transmission d’entreprise en renforçant la sensibilisation précoce des dirigeants (via des acteurs comme les experts-comptables ou les associations) pour les inciter à structurer leur réflexion sur la cession dès les premiers signes de fragilité, indépendamment d’une crise financière immédiate.\n- Améliorer la coordination entre acteurs publics et privés (ministères, URSSAF, Banque de France, etc.) pour éviter la redondance et faciliter l’accès aux dispositifs existants, notamment pour les PME et TPE moins à l’aise dans ce paysage complexe.\n\nElle suggère aussi de lancer un plan d’actions dès 2026 (comme le plan *« Objectif reprises »*) pour cibler les dirigeants de plus de 55 ans et renforcer les outils de communication et de formation.",
+   "citations": [
+    {
+     "doc_id": "cc-difficultes-entreprises",
+     "page": 50
+    },
+    {
+     "doc_id": "cc-difficultes-entreprises-synthese",
+     "page": 9
+    }
+   ]
+  },
+  {
+   "qid": "cls2-049",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-050",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-051",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-052",
+   "answer": "Les activités numériques et de télécoms, regroupées sous les services d’information-communication, affichent un déficit record de 7,7 milliards d’euros avec l’étranger en 2025.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2112",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2059",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-053",
+   "answer": "D’après les données de la Cour des comptes, en fixant un seuil minimal de 500 patients, les 8 553 médecins généralistes libéraux peu ou pas impliqués pourraient couvrir entre 2,5 et 4 millions de patients supplémentaires.",
+   "citations": [
+    {
+     "doc_id": "cc-medecin-traitant",
+     "page": 8
+    },
+    {
+     "doc_id": "cc-medecin-traitant",
+     "page": 29
+    }
+   ]
+  },
+  {
+   "qid": "cls2-054",
+   "answer": "En 2022, 420 000 logements sociaux ont été attribués en France, tandis qu’au 1er juillet 2022, 2,4 millions de demandes restaient en attente.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2047",
+     "page": 2
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 20
+    }
+   ]
+  },
+  {
+   "qid": "cls2-055",
+   "answer": "En réalité, les entreprises du commerce (hors intérim) ont perdu 21 400 emplois salariés en 2024, selon les données les plus récentes.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2058",
+     "page": 4
+    },
+    {
+     "doc_id": "insee-ip2111",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-056",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-057",
+   "answer": "La Cour des comptes recommande de simplifier les modalités de calcul des subventions en définissant un taux cible forfaitaire par opération, modulable selon la nature ou la taille du projet, pour améliorer la lisibilité et la conformité des financements.\n\nElle suggère aussi de clarifier la stratégie de financement en se basant sur des priorités objectivées (carences et vétusté) et d’analyser annuellement les taux d’équipement structurant par type, territoire et bassin de vie à partir de 2027.\n\nEnfin, elle insiste sur la nécessité de mieux orienter les financements vers des objectifs stratégiques, comme la rénovation et l’accessibilité.",
+   "citations": [
+    {
+     "doc_id": "cc-equipements-sportifs-ans",
+     "page": 37
+    },
+    {
+     "doc_id": "cc-equipements-sportifs-ans",
+     "page": 42
+    },
+    {
+     "doc_id": "cc-equipements-sportifs-ans",
+     "page": 65
+    }
+   ]
+  },
+  {
+   "qid": "cls2-058",
+   "answer": "En réalité, les exploitants ont touché 63,72 €/ha en 2023, bien loin des 80 €/ha initialement prévus.",
+   "citations": [
+    {
+     "doc_id": "cc-pac",
+     "page": 84
+    },
+    {
+     "doc_id": "cc-pac",
+     "page": 90
+    }
+   ]
+  },
+  {
+   "qid": "cls2-059",
+   "answer": "Le taux de la taxe sur les opérations à haute fréquence dans la taxe française est de 0,01 % sur le montant des ordres annulés ou modifiés excédant 80 % des ordres transmis au cours d’une même journée, lorsque ces modifications interviennent dans un délai inférieur à une demi-seconde.",
+   "citations": [
+    {
+     "doc_id": "cc-taxe-transactions-financieres",
+     "page": 32
+    },
+    {
+     "doc_id": "cc-taxe-transactions-financieres",
+     "page": 62
+    }
+   ]
+  },
+  {
+   "qid": "cls2-060",
+   "answer": "En 2025, les dépenses des ménages en boissons alcoolisées, tabac et stupéfiants s’élevaient à 49,9 milliards d’euros, dont une part significative était dédiée aux cigarettes et autres produits du tabac (23,6 milliards d’euros).\n\nPour les boissons alcoolisées (vin, bière et spiritueux), les dépenses en volume étaient estimées à 20,9 milliards d’euros en 2025.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2110",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2110",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-061",
+   "answer": "En 2025, le coût du déplacement du président à l’Assemblée générale des Nations Unies s’élevait à 995 000 €, tandis que les frais d’hébergement ont augmenté de 68,6 % (passant de 140 000 € en 2019 à 236 000 € en 2025).",
+   "citations": [
+    {
+     "doc_id": "cc-presidence-republique-2025",
+     "page": 49
+    }
+   ]
+  },
+  {
+   "qid": "cls2-062",
+   "answer": "Selon l'Insee, la fonction publique d'État comptait 2 587 400 agents civils fin 2024.\nLa Cour des comptes indique qu'en fin 2025, le régime de retraite des fonctionnaires de l'État comptait 1,9 million de cotisants et 2 millions de retraités de droit propre.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2094",
+     "page": 1
+    },
+    {
+     "doc_id": "cc-retraites-fonctionnaires-etat",
+     "page": 15
+    }
+   ]
+  },
+  {
+   "qid": "cls2-063",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-064",
+   "answer": "En 2024, 10,1 % de la Surface Agricole Utilisée (SAU) française était certifiée en agriculture biologique.\nLa cible fixée par la France pour 2027 était de 18 % de SAU en agriculture biologique.",
+   "citations": [
+    {
+     "doc_id": "cc-pac",
+     "page": 91
+    },
+    {
+     "doc_id": "cc-pac",
+     "page": 74
+    }
+   ]
+  },
+  {
+   "qid": "cls2-065",
+   "answer": "En réalité, une personne physique ne risque pas une amende de 1 500 € pour les obligations des ZSCE, car cette sanction pénale concerne les contraventions de 5ᵉ classe (7 500 € pour une personne morale) et les formations obligatoires, mais pas une amende administrative purement financière dans les cas de non-respect des ZSCE.",
+   "citations": [
+    {
+     "doc_id": "cc-algues-vertes",
+     "page": 41
+    },
+    {
+     "doc_id": "cc-algues-vertes",
+     "page": 45
+    }
+   ]
+  },
+  {
+   "qid": "cls2-066",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-067",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-068",
+   "answer": "En 2024, chez les agents des collectivités locales, l’écart de salaire net moyen entre hommes et femmes s’aggrave avec l’âge : il passe de 1,8 % pour les moins de 30 ans à 9,0 % pour les 60 ans et plus.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2101",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2100",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-069",
+   "answer": "Selon l’Insee Première n° 2056 (juin 2025), les dépenses en services récréatifs ont accéléré de +12,8 % en volume en 2024, portées par la billetterie des JOP.\n\nL’Insee Première n° 2110 (juin 2026) indique un repli de -1,2 % en volume pour les services récréatifs en 2024, en contrepoint des achats de billets.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2056",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2110",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-070",
+   "answer": "Entre 2019 et 2025, les tarifs des agences de voyage, voyagistes, services de restauration et activités connexes ont grimpé de +31,6 %, tandis que ceux des opérateurs téléphoniques ont baissé de -7,9 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2112",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2059",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-071",
+   "answer": "En 2025, dix-neuf projets ont été déposés dans le cadre de l’appel d’offre GPID, totalisant une demande d’aide de 8 milliards d’euros.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 134
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 131
+    }
+   ]
+  },
+  {
+   "qid": "cls2-072",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-073",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-074",
+   "answer": "Selon la classification de la Cour des comptes, 36 % de la programmation pluriannuelle 2023-2027 du PSN français sont consacrés aux aides couplées.",
+   "citations": [
+    {
+     "doc_id": "cc-pac-synthese",
+     "page": 7
+    },
+    {
+     "doc_id": "cc-pac",
+     "page": 25
+    }
+   ]
+  },
+  {
+   "qid": "cls2-075",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-076",
+   "answer": "Le chiffre d'affaires moyen en 2023 pour les micro-entrepreneurs immatriculés en 2018 du profil « salariés en activité de complément » ayant fait de leur activité principale est de 24 300 euros.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2118",
+     "page": 4
+    },
+    {
+     "doc_id": "insee-ip2069",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-077",
+   "answer": "D'après les données de l'Insee, la production en volume des céréales (dont blé tendre, orge, maïs et autres céréales) a reculé de 16,8 % en 2024.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2062",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2062",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-078",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-079",
+   "answer": "Bruxelles note que la capacité de l'agriculture française à encaisser les chocs a progressé de 1 entre les périodes 2001-2015 et 2007-2021, selon l'indice de résilience. L'ensemble de l'Union européenne à 27 a un score de 2,5 sur la même période.",
+   "citations": [
+    {
+     "doc_id": "cc-pac-synthese",
+     "page": 17
+    },
+    {
+     "doc_id": "cc-pac",
+     "page": 95
+    }
+   ]
+  },
+  {
+   "qid": "cls2-080",
+   "answer": "En 2023, l'Insee recense 182 700 équipements sportifs hors sports de nature en France.\nLa Cour des comptes en juge 170 000 équipements structurants, selon les critères de l'ANS, à partir de la base Data-ES.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2041",
+     "page": 1
+    },
+    {
+     "doc_id": "cc-equipements-sportifs-ans",
+     "page": 17
+    }
+   ]
+  },
+  {
+   "qid": "cls2-081",
+   "answer": "À mi-2026, le stock d'obligations souveraines vertes de la France atteint 100,1 Md€, et 10 Md€ ont été levés depuis le début de l'année 2026.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 118
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 117
+    }
+   ]
+  },
+  {
+   "qid": "cls2-082",
+   "answer": "En 2025, 7,18 millions de loyers ont été déclarés par les propriétaires, représentant 65 % des logements loués (hors logement social).",
+   "citations": [
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 77
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 173
+    }
+   ]
+  },
+  {
+   "qid": "cls2-083",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-084",
+   "answer": "En 2025, 10 % des émissions liées aux importations françaises proviennent de la Chine et 2 % de la Russie.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2130",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2130",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-085",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-086",
+   "answer": "Dans le compte prévisionnel 2025 (publié en décembre 2025), l’Insee estimait les subventions d’exploitation à 8,4 milliards d’euros. Dans le compte provisoire 2025 (publié en juillet 2026), ce montant est révisé à 8,0 milliards d’euros.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2086",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2116",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-087",
+   "answer": "D'après les données du budget vert, l'État a dépensé 345 Md€ en crédits jugés défavorables pour l'environnement en 2022, et ces dépenses sont revenues à leur niveau de 2022 en 2024, sans information spécifique pour 2023.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 177
+    },
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 90
+    }
+   ]
+  },
+  {
+   "qid": "cls2-088",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-089",
+   "answer": "En réalité, le déficit de l'État mesuré par l'Insee en comptabilité nationale était initialement publié à 152,5 Md€ en 2024 dans l'extrait [insee-ip2054 p.2], puis révisé à 154,1 Md€ pour les administrations centrales (incluant l'État) dans [insee-ip2054 p.2] et confirmé à 152,5 Md€ pour l'État seul dans [insee-ip2106 p.1].",
+   "citations": [
+    {
+     "doc_id": "insee-ip2054",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2106",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-090",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-091",
+   "answer": "La Cour des comptes souligne que l’assurance maladie manque de données structurées pour identifier et analyser les médecins traitants, car la notion n’est pas intégrée aux systèmes d’information (comme le SNDS). Les lacunes incluent l’absence de méthode formalisée pour recenser les médecins traitants, une absence de données sur leurs modes d’exercice (individuel, groupe, maison de santé) et une difficulté à distinguer les médecins libéraux des salariés, notamment ceux en centres de santé.\n\nLes bases de données ne permettent pas non plus de consolider les profils et activités des médecins traitants, car les données disponibles (contrats ou remboursements) manquent de précision pour les professionnels salariés ou ceux non référencés dans les référentiels (environ 20 000 identifiants inconnus en 2024).",
+   "citations": [
+    {
+     "doc_id": "cc-medecin-traitant",
+     "page": 24
+    },
+    {
+     "doc_id": "cc-medecin-traitant",
+     "page": 125
+    }
+   ]
+  },
+  {
+   "qid": "cls2-092",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-093",
+   "answer": "En 2020, les militaires nés en 1953 touchaient en moyenne 2 410 € de retraite tous régimes confondus, tandis que les fonctionnaires civils de l’État de la même génération perçoivent 2 200 €.",
+   "citations": [
+    {
+     "doc_id": "cc-retraites-fonctionnaires-etat",
+     "page": 42
+    },
+    {
+     "doc_id": "cc-retraites-fonctionnaires-etat",
+     "page": 18
+    }
+   ]
+  },
+  {
+   "qid": "cls2-094",
+   "answer": "En réalité, les prix du vin à la production ont progressé en 2025, avec une hausse de +1,2 % pour le vin en général (contre une baisse de -6,4 % en 2024). Pour le champagne, ils ont même augmenté de +2,6 %, tandis que les autres vins d’appellation (+0,9 %) et les vins sans appellation (-0,1 %) ont varié peu.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2116",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2062",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-095",
+   "answer": "Depuis 2023, la métropole de Lyon a prononcé 389 restitutions de loyers trop-perçus et 29 amendes administratives, pour un montant cumulé de 152 000 €.",
+   "citations": [
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 39
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 38
+    }
+   ]
+  },
+  {
+   "qid": "cls2-096",
+   "answer": "En 2025, les émissions des compagnies nationales de transport aérien résidents ont augmenté de 1,2 Mt, soit +6,3 %, selon l’Insee.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2130",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2077",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-097",
+   "answer": "En 2024, le salaire net moyen en EQTP des agents civils de la FPE s’élève à 3 018 euros contre 2 886 euros en 2023, soit une hausse de 132 euros.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2100",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2065",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-098",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-099",
+   "answer": "En 2024, les vignerons exploitants soumis au régime réel d'imposition dégagent un revenu mensuel moyen de 3 410 euros, incluant les pertes.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2114",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-100",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-101",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-102",
+   "answer": "En 2024, un site industriel qui consomme peu d’électricité paie son MWh 2,6 fois plus cher qu’un gros consommateur, contre 1,9 en 2019.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2095",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2038",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-103",
+   "answer": "En 2025, l'Insee indique que 13 900 commerces ont fait faillite, tandis que la Cour des comptes précise que 68 057 entreprises ont connu une défaillance en 2025.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2111",
+     "page": 4
+    },
+    {
+     "doc_id": "cc-difficultes-entreprises",
+     "page": 24
+    }
+   ]
+  },
+  {
+   "qid": "cls2-104",
+   "answer": "En 2023, l’Insee indiquait un salaire net moyen de 2 842 euros pour les fonctionnaires de la FPH en équivalent temps plein.\nEn 2024, ce salaire net moyen est estimé à 2 691 euros pour les fonctionnaires, avec une progression de 1,0 % en euros constants.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2067",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2102",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-105",
+   "answer": "En 2023, les habitants des bourgs ruraux de métropole mettent en moyenne 10 minutes en voiture pour rejoindre une salle de remise en forme, et 5 minutes pour une salle spécialisée.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2041",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-106",
+   "answer": "En 2025, 9 % des salariés du secteur des transports et de l’entreposage travaillent dans une entreprise utilisant l’IA, selon les données du groupe 4 (logistique et usages diversifiés). Parmi les entreprises du secteur, 9 % déclarent utiliser au moins une technologie d’IA en 2025.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2120",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2120",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-107",
+   "answer": "La Poste réclame le remboursement d’un trop-perçu estimé à 1,9 Md€ (avec actualisation, 2,2 Md€).",
+   "citations": [
+    {
+     "doc_id": "cc-retraites-fonctionnaires-etat",
+     "page": 76
+    },
+    {
+     "doc_id": "cc-retraites-fonctionnaires-etat",
+     "page": 75
+    }
+   ]
+  },
+  {
+   "qid": "cls2-108",
+   "answer": "L’audit de la Cour montre que la banlieue parisienne affiche la pondération moyenne la plus forte pour les logements en gestion directe, avec un ratio dépassant 133 logements réels représentés par une observation médiane corrigée en 2024.",
+   "citations": [
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 131
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 112
+    }
+   ]
+  },
+  {
+   "qid": "cls2-109",
+   "answer": "L’État a injecté 19 Md€ dans la recherche partenariale entre 2014 et 2024, incluant les financements budgétaires et fiscaux.",
+   "citations": [
+    {
+     "doc_id": "cc-recherche-entreprises",
+     "page": 9
+    },
+    {
+     "doc_id": "cc-recherche-entreprises",
+     "page": 25
+    }
+   ]
+  },
+  {
+   "qid": "cls2-110",
+   "answer": "En 2024, 34 % des entreprises de 50 à 249 salariés utilisant l’IA ont mobilisé une technologie de conversion du langage parlé en un format lisible par une machine (transcription vocale).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2061",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2120",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-111",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-112",
+   "answer": "Oui, les rejets de gaz à effet de serre des unités résidentes françaises ont reculé de 1,5 % en 2024 (après révision), contre 0,9 % initialement annoncé dans l’Insee Première no 2077.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2077",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2130",
+     "page": 4
+    }
+   ]
+  },
+  {
+   "qid": "cls2-113",
+   "answer": "En réalité, l'écart de salaire net moyen entre femmes et hommes dans la fonction publique de l'État en 2023 était initialement de 12,2 %, mais il a été ajusté à 12,0 % dans la publication la plus récente (2024).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2065",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2100",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-114",
+   "answer": "En 2019-2025, à prix constants, les achats de tabac ont reculé le plus vite en moyenne chaque année, avec un taux de -27,8 % par an.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2110",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2110",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-115",
+   "answer": "D'après le compte provisoire de l’agriculture pour 2024 (les données 2025 sont encore provisoires et ne sont pas détaillées dans les extraits), le groupe de produits qui a le plus contribué à la baisse de la valeur de la production agricole en 2024 est le vin, avec une contribution négative de 4,5 points en valeur.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2062",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2062",
+     "page": 2
+    }
+   ]
+  },
+  {
+   "qid": "cls2-116",
+   "answer": "Les projets doivent avoir une assiette éligible de dépenses de 400 000 € minimum et un niveau initial de Technology Readiness Level (TRL) au moins égal à 4, visant un niveau final d’au moins TRL 7.",
+   "citations": [
+    {
+     "doc_id": "cc-ia-ministere-culture",
+     "page": 29
+    },
+    {
+     "doc_id": "cc-ia-ministere-culture",
+     "page": 28
+    }
+   ]
+  },
+  {
+   "qid": "cls2-117",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-118",
+   "answer": "En 2024, les recettes de la fiscalité environnementale ont rapporté 72,3 Md€, représentant 7,7 % des recettes fiscales totales.",
+   "citations": [
+    {
+     "doc_id": "cc-transition-ecologique",
+     "page": 90
+    }
+   ]
+  },
+  {
+   "qid": "cls2-119",
+   "answer": "En 2023, les établissements industriels d’au moins 20 salariés ont le plus dépensé en études préalables à un investissement antipollution dans la protection de l’air et du climat, avec un montant de 284 millions d’euros pour les études d’impact et de coût.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2071",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2071",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-120",
+   "answer": "Selon les extraits, 37,8 M€ des 1,5 Md€ de fonds publics de la stratégie nationale quantique ont été consacrés à l’informatique quantique via l’Agence nationale de la recherche (ANR).",
+   "citations": [
+    {
+     "doc_id": "cc-informatique-quantique",
+     "page": 16
+    },
+    {
+     "doc_id": "cc-informatique-quantique",
+     "page": 51
+    }
+   ]
+  },
+  {
+   "qid": "cls2-121",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-122",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-123",
+   "answer": "En réalité, les usines de 20 salariés ou plus en 2025 ne sont pas concernées par les données disponibles pour 2024 dans les extraits fournis. Les chiffres disponibles concernent uniquement 2024 avec une facture énergétique de 7,3 milliards d'euros.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2095",
+     "page": 1
+    },
+    {
+     "doc_id": "insee-ip2038",
+     "page": 1
+    }
+   ]
+  },
+  {
+   "qid": "cls2-124",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-125",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-126",
+   "answer": "La recommandation de la Cour de fiabiliser les statistiques de loyers via GMBI s’adresse aux ministères suivants :\n- ministère de la transition écologique, de la biodiversité et des négociations internationales sur le climat et la nature,\n- ministère de l’économie, des finances et de la souveraineté industrielle, énergétique et numérique.\n\nCette recommandation est formulée pour 2026, avec une obligation de collecte obligatoire des données à partir de la campagne 2028.",
+   "citations": [
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 79
+    },
+    {
+     "doc_id": "cc-encadrement-loyers",
+     "page": 11
+    }
+   ]
+  },
+  {
+   "qid": "cls2-127",
+   "answer": "INTROUVABLE",
+   "citations": []
+  },
+  {
+   "qid": "cls2-128",
+   "answer": "D’après les extraits, le secteur des activités spécialisées, scientifiques et techniques a connu le plus fort taux moyen de créations économiques entre 2015 et 2022, avec 19 %.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2045",
+     "page": 2
+    },
+    {
+     "doc_id": "insee-ip2045",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-129",
+   "answer": "En 2022, les ménages logés dans un HLM (parc social) présentent des caractéristiques distinctes de ceux du parc privé : ils sont plus souvent des familles monoparentales (42 % contre une proportion moins marquée dans le privé) et des couples avec trois enfants ou plus (47 %), et ils sont généralement plus âgés (la moitié des locataires sociaux ont plus de 53 ans, contre 42 ans pour les locataires privés).\n\nLes locataires sociaux ont aussi un niveau de vie médian plus faible en cas d’installation récente (1 300 € contre 1 500 € pour ceux installés depuis plus de 10 ans), et ils sont plus exposés à des défauts de logement comme le bruit (36 % contre 24 % dans le privé).",
+   "citations": [
+    {
+     "doc_id": "insee-ip2047",
+     "page": 3
+    }
+   ]
+  },
+  {
+   "qid": "cls2-130",
+   "answer": "En moyenne, un habitant des zones rurales à habitat très dispersé met 12 minutes en voiture pour rejoindre un court de tennis, soit 2,4 fois plus que la moyenne française de 5 minutes en 2023.",
+   "citations": [
+    {
+     "doc_id": "insee-ip2041",
+     "page": 3
+    },
+    {
+     "doc_id": "insee-ip2041",
+     "page": 1
+    }
+   ]
+  }
+ ]
+}

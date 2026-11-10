@@ -18,3 +18,11 @@ Une ligne par essai. Recherche mesurée sur les 77 questions de validation v1 qu
 | 10/11 | Règle « En réalité » restreinte + non-réponses → INTROUVABLE | +0,24 | 36 % | 10 « les extraits ne mentionnent pas » convertis |
 | 10/11 | + vérification des chiffres et des aveux d'incertitude | +0,38 | 22 % | 6,3 s par question ; soumission v1 `2026-11-10_1` |
 
+## Palier 3 (validation v2, 40 questions, toutes avec réponse)
+
+| Date | Changement | R@5 | MRR | Score | Remarque |
+|---|---|---|---|---|---|
+| 10/11 | Index v1 seul (avant la mise à jour) | 0,138 | 0,263 | – | les preuves sont surtout dans les documents v2 |
+| 10/11 | `run.sh index` + `run.sh update` (v1 + v2), pipeline complet | 0,912 | 0,666 | +0,125 | 6,1 s par question ; soumission v2 `2026-11-10_1` |
+| 10/11 | Aveux cherchés dans toute la réponse (et plus seulement les 300 premiers caractères) | – | – | – | corrige val2-024 ; v1 inchangée (+0,37) |
+

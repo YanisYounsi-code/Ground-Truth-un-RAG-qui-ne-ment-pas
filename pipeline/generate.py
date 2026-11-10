@@ -119,7 +119,7 @@ def lire_reponse(brut, retenus):
     reponse = reponse.replace("**", "")  # gras Markdown : inutile pour le juge, gêne la lecture des chiffres
     if reponse.strip(" .").upper() == ABSTENTION or texte.upper().startswith(ABSTENTION):
         return ABSTENTION, []
-    if NON_REPONSE.search(_sans_accents(reponse[:300])):
+    if NON_REPONSE.search(_sans_accents(reponse)):  # toute la réponse : l'aveu arrive parfois à la fin
         # Le modèle explique qu'il n'a pas l'information au lieu d'écrire INTROUVABLE : noté comme une
         # réponse fausse (-1) alors qu'une abstention vaut 0 ou +1. On la convertit en abstention.
         return ABSTENTION, []

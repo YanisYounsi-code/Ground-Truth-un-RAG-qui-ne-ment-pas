@@ -161,3 +161,44 @@ paramètres face à un tableau. Pistes pour le palier 3, sans changer de génér
 Ce qui compte vraiment : l'OCR des scans (+11 points de R@5), le reranker (+11 points de MRR), la
 recherche dense (+5 points de R@5) et, côté génération, la vérification de la réponse (+0,14 de
 score de confiance).
+
+## 7. Palier 3 : le corpus bouge (validation v2, 40 questions)
+
+Index v1 construit par `run.sh index` (OCR français), puis `run.sh update` avec les 20 PDF v2 :
+les 110 documents v1 ne sont ni relus ni réencodés (Colab T4, 10/11).
+
+**Recherche** (`des_tests/ablation_v2.md`) :
+
+| Configuration | R@5 | R@10 | MRR | R@5 temporel | R@5 multi-doc |
+|---|---|---|---|---|---|
+| **Complet (index v1 + mise à jour v2)** | **0,912** | 0,963 | 0,666 | 0,88 | 0,86 |
+| Sans reranker | 0,750 | 0,887 | 0,590 | 0,67 | 0,86 |
+| Sans dense (BM25 seul) | 0,688 | 0,762 | 0,552 | 0,50 | 0,79 |
+| Sans BM25 (dense seul) | 0,925 | 0,975 | 0,660 | 1,00 | 0,86 |
+| **Index v1 seul (sans la mise à jour)** | **0,138** | 0,138 | 0,263 | 0,12 | 0,50 |
+
+- **La mise à jour est indispensable** : sans elle, la bonne page n'est dans le top 5 que pour 14 %
+  des groupes de preuve, puisque la plupart des réponses sont dans les documents v2.
+- Le reranker (+16 points de R@5) et le dense (+22 points) pèsent encore plus qu'en v1 : les
+  questions v2 sont plus reformulées (et 6 sont en anglais). BM25 est de nouveau dans le bruit.
+
+**Score** (`des_tests/rapports/val2_report.json`) : **+0,125**, avec 16 réponses justes et citées,
+2 justes mal citées, 12 fausses et 10 abstentions. Les 40 questions ont toutes une réponse : se
+taire rapporte 0, le plancher est donc 0 et non +0,23. Par type : texte +0,50, synthèse +0,67,
+tableau +0,33, temporel 0,00, multi-doc −0,14, graphique −0,50. 6,1 s par question.
+
+**Ce qui rate** (`des_tests/echecs_v2.md`, 8 cas commentés) :
+- *Édition périmée* (val2-001) : le modèle prend les chiffres de l'édition v1 (insee-ip2058) alors
+  que l'édition révisée (insee-ip2111) est dans le contexte. La règle « le plus récent fait foi » ne
+  suffit pas toujours à un modèle de 3 milliards de paramètres.
+- *Chaîne de révisions incomplète* (val2-005) : il faut trois éditions successives ; la plus récente
+  (insee-ip2105 p.4) n'est pas dans le top 5.
+- *Mauvaise lecture* (val2-003, 014, 015) : deux années confondues, un écart pris pour le total.
+- *Aveu non détecté* (val2-024) : « les données… ne sont pas explicitement fournies » arrivait après
+  les 300 premiers caractères. La détection porte désormais sur toute la réponse (sans effet sur la
+  validation v1 : +0,37 dans les deux cas).
+
+Pistes, dans le budget de 4 appels : présenter les extraits du plus récent au plus ancien quand la
+question demande « le plus récent » ; garder au moins un passage de chaque document du top 5 pour les
+questions multi-doc et temporelles.
+
