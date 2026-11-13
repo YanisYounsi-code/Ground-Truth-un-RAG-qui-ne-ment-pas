@@ -1,9 +1,9 @@
 # Comparaison des parseurs
 
-22 pages annotées, 42 valeurs. Valeurs : part des valeurs retrouvées dans le texte extrait. Liens : part retrouvée sur la même ligne que son libellé.
+30 pages annotées, 58 valeurs. Valeurs : part des valeurs retrouvées dans le texte extrait. Liens : part retrouvée sur la même ligne que son libellé.
 
 | Parseur | tableau : valeurs / liens | graphique : valeurs / liens | scan : valeurs / liens | total : valeurs / liens |
 |---|---|---|---|---|
-| pymupdf | 100% / 0% | 43% / 0% | 0% / 0% | 55% / 0% |
-| pymupdf_tables | 100% / 85% | 43% / 0% | 0% / 0% | 55% / 40% |
-| tesseract | 80% / 40% | 0% / 0% | 100% / 53% | 74% / 38% |
+| pymupdf | 100% / 0% | 79% / 53% | 0% / 0% | 60% / 17% |
+| pymupdf_tables | 100% / 85% | 79% / 58% | 0% / 0% | 60% / 48% |
+| tesseract | 80% / 40% | 63% / 58% | 100% / 63% | 81% / 53% |

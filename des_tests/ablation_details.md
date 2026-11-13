@@ -62,33 +62,29 @@ Ce que j'en retiens :
 Au palier 1, la racinisation légère du tokeniseur a fait passer le R@10 du BM25 sur les pages de
 0,636 à 0,727 (`des_tests/journal.md`).
 
-## 3. Parsing : 22 pages annotées, 42 valeurs
+## 3. Parsing : 30 pages annotées, 58 valeurs
 
-Pages de preuve de la validation (10 tableaux, 10 graphiques, 10 scans ; 8 pages sans valeur
-lisible sont écartées). Pour chaque valeur : la valeur exacte et son libellé (le nom de la ligne du
-tableau, du segment du graphique). Libellés repris de la citation source de la validation. Chaque
-valeur a été vérifiée : 38 sont retrouvées telles quelles dans le texte d'au moins un parseur, les 4
-qui ne figurent que dans l'image d'un graphique (cc-informatique-quantique p.39 et p.88) ont été
-lues sur l'image de la page. Résultat : `des_tests/parsing_resultats.md`.
+Pages de preuve de la validation (10 tableaux, 10 graphiques, 10 scans). Pour chaque valeur : la valeur
+exacte et son libellé (le nom de sa ligne de tableau, de son segment ou la phrase qui la porte). Libellés des
+22 premières pages repris de la citation source de la validation ; valeurs des 8 autres (graphiques sans
+valeur citée, scans ip2041) relevées sur l'image de la page. Chaque valeur a été vérifiée sur la page.
+Résultat : `des_tests/parsing_resultats.md`.
 
-| Parseur | Tableau : valeurs / liens | Graphique : valeurs / liens | Scan : valeurs / liens |
-|---|---|---|---|
-| PyMuPDF brut | 100 % / 0 % | 43 % / 0 % | 0 % / 0 % |
-| **PyMuPDF + tableaux en Markdown** | 100 % / **85 %** | 43 % / 0 % | 0 % / 0 % |
-| Tesseract (OCR, français) | 80 % / 40 % | 0 % / 0 % | **100 % / 53 %** |
+| Parseur | Tableau : valeurs / liens | Graphique : valeurs / liens | Scan : valeurs / liens | Total |
+|---|---|---|---|---|
+| PyMuPDF brut | 100 % / 0 % | 79 % / 53 % | 0 % / 0 % | 60 % / 17 % |
+| **PyMuPDF + tableaux en Markdown** | 100 % / **85 %** | 79 % / 58 % | 0 % / 0 % | 60 % / 48 % |
+| Tesseract (OCR, français) | 80 % / 40 % | 63 % / 58 % | **100 % / 63 %** | 81 % / 53 % |
 
 *Valeurs* : la valeur est dans le texte extrait. *Liens* : elle est sur la même ligne que son libellé.
 
-- **Sur les tableaux, PyMuPDF trouve tous les chiffres mais casse le lien avec leur ligne** : il lit
-  colonne par colonne, et « 11,3 » se retrouve loin de « Vin ». Réécrits en Markdown, 85 % des
-  chiffres sont sur la ligne de leur libellé : c'est ce qui permet au modèle de savoir à quoi
-  correspond un nombre. D'où le choix de `pymupdf_tables`, même si la recherche ne change pas
-  (section 2) : le gain est pour la lecture, pas pour trouver la page.
-- **Sur les scans, seul l'OCR lit quelque chose** ; il est appliqué uniquement aux pages sans texte
-  (moins de 50 caractères), car sur les pages normales il est moins bon que PyMuPDF (80 % contre 100 %
-  sur les tableaux) et beaucoup plus lent.
-- **Les graphiques restent un angle mort** : moins de la moitié des valeurs sont imprimées en texte,
-  et jamais à côté de leur libellé. Sur ces questions, la bonne stratégie est l'abstention (section 4).
+- **Sur les tableaux, PyMuPDF trouve tous les chiffres mais casse le lien avec leur ligne** ; réécrits en
+  Markdown, 85 % restent sur la ligne de leur libellé. D'où le choix de `pymupdf_tables`.
+- **Sur les scans, seul l'OCR lit quelque chose** ; il n'est appliqué qu'aux pages sans texte (moins de 50
+  caractères), car ailleurs il est moins bon que PyMuPDF et beaucoup plus lent.
+- **Graphiques** : les chiffres écrits (notes de lecture, étiquettes) sont lus ; une valeur seulement
+  dessinée (hauteur d'une barre, comme les ~800 heures de 2023 en val1-006) n'est lue par aucun parseur.
+  Sur ces questions, la bonne stratégie est l'abstention.
 
 ## 4. Abstention : la porte sur le score du reranker ne marche pas, la vérification de la réponse oui
 

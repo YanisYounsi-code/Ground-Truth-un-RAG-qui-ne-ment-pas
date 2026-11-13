@@ -185,8 +185,17 @@
   "type": "graphique",
   "qid": "val1-006",
   "indice": "Graphique n° 7 : la barre 2023 « NB heures à prix spot > barème » (environ 800 heures) est la plus basse des années 2018 à 2025",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "6 570",
+    "libelle": "prix spot supérieurs"
+   },
+   {
+    "valeur": "376",
+    "libelle": "versement fournisseur régulé"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2113",
@@ -226,8 +235,17 @@
   "type": "graphique",
   "qid": "val1-027",
   "indice": "Figure 2 : la barre « Agriculture » (poids dans la consommation d'espace économique) est la plus courte, proche de 0 %, bien en dessous de l'hébergement-restauration.",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "29,0 %",
+    "libelle": "industrie"
+   },
+   {
+    "valeur": "13,4 %",
+    "libelle": "emploi salarié"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2064",
@@ -235,8 +253,17 @@
   "type": "graphique",
   "qid": "val1-041",
   "indice": "Figure 4, barres « Pôles » : la plus longue est celle des aires de moins de 50 000 hab. (vers 26 %)",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "31 %",
+    "libelle": "couronnes"
+   },
+   {
+    "valeur": "491 101",
+    "libelle": "bassin de vie de Paris"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2093",
@@ -262,8 +289,17 @@
   "type": "graphique",
   "qid": "val1-045",
   "indice": "Figure 2 : dans la barre 2022, le segment rouge « Hébergement-restauration » (≈3 points) est le plus grand ; le losange « Services marchands » est à ≈7,5 %.",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "2,3 %",
+    "libelle": "services marchands"
+   },
+   {
+    "valeur": "0,5",
+    "libelle": "information-communication"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2061",
@@ -271,8 +307,17 @@
   "type": "graphique",
   "qid": "val1-050",
   "indice": "Figure 5 : après « Achat du commerce prêt à l'emploi » (≈69 %), la barre la plus longue est « Contrat passé avec un prestataire externe » (≈29 %), devant logiciel libre modifié (≈24 %) et développement interne (≈23 %).",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "28 %",
+    "libelle": "marketing"
+   },
+   {
+    "valeur": "44 %",
+    "libelle": "langage écrit"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2067",
@@ -280,8 +325,17 @@
   "type": "graphique",
   "qid": "val1-055",
   "indice": "Figure 2 : la barre verte « Évolution annuelle » de 2020 (≈5,5 %) est de loin la plus haute de la série 2012-2023.",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "2 842",
+    "libelle": "salaire net moyen"
+   },
+   {
+    "valeur": "0,9 %",
+    "libelle": "euros constants"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "cc-informatique-quantique",
@@ -447,8 +501,17 @@
   "type": "scan",
   "qid": "",
   "indice": "",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "182 700",
+    "libelle": "équipements sportifs"
+   },
+   {
+    "valeur": "4,36",
+    "libelle": "petits terrains extérieurs"
+   }
+  ],
+  "verifie": true
  },
  {
   "doc_id": "insee-ip2041",
@@ -456,7 +519,16 @@
   "type": "scan",
   "qid": "",
   "indice": "",
-  "faits": [],
-  "verifie": false
+  "faits": [
+   {
+    "valeur": "36,4",
+    "libelle": "Bourgogne-Franche-Comté"
+   },
+   {
+    "valeur": "39,1 %",
+    "libelle": "salles de sport"
+   }
+  ],
+  "verifie": true
  }
 ]

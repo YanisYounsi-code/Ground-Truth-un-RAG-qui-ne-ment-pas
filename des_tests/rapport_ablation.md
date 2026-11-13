@@ -34,17 +34,17 @@ Une question vaut 1,3 point de R@5 : un écart d'une ou deux questions n'est pas
 à rien ou presque** : BM25 en plus du dense et l'en-tête de contexte, gardés pour leur coût presque nul ;
 la porte sur le score, retirée (section 4). **Comptent le plus** : l'OCR, le reranker, le dense et la vérification.
 
-## 3. Parsing (30 pages difficiles sélectionnées ; 42 valeurs annotées avec leur libellé)
+## 3. Parsing (30 pages difficiles, 58 valeurs annotées avec leur libellé)
 
 | Parseur | Tableau : valeur / sur la ligne de son libellé | Graphique | Scan |
 |---|---|---|---|
-| PyMuPDF brut | 100 % / 0 % | 43 % / 0 % | 0 % / 0 % |
-| **PyMuPDF + tableaux Markdown** | 100 % / **85 %** | 43 % / 0 % | 0 % / 0 % |
-| Tesseract | 80 % / 40 % | 0 % / 0 % | **100 %** / 53 % |
+| PyMuPDF brut | 100 % / 0 % | 79 % / 53 % | 0 % / 0 % |
+| **PyMuPDF + tableaux Markdown** | 100 % / **85 %** | 79 % / 58 % | 0 % / 0 % |
+| Tesseract | 80 % / 40 % | 63 % / 58 % | **100 %** / 63 % |
 
-Le Markdown ne change pas la recherche mais garde chaque chiffre à côté de son libellé, ce qui permet au
-générateur de lire la bonne ligne. L'OCR n'est appliqué qu'aux pages vides : ailleurs il est moins bon et
-20 fois plus lent. Les graphiques restent un angle mort.
+Le Markdown garde chaque chiffre à côté de son libellé (lecture de la bonne ligne). OCR seulement sur
+les pages vides : ailleurs, moins bon et 20 fois plus lent. Une valeur seulement dessinée (barre) n'est lue
+par aucun parseur.
 
 ## 4. Abstention : ce qui n'a pas marché, ce qui a marché
 
