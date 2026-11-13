@@ -30,7 +30,8 @@ Validation v2 (40 questions, toutes avec réponse, donc plancher 0) : **+0,125**
 | Chunking structure, sans en-tête | 0,935 | 0,781 | dans le bruit (naïf : 0,929 ; sans tableaux Markdown : 0,909) |
 | Index v1 seul, questions v2 | 0,138 | 0,263 | la mise à jour v2 est indispensable |
 
-Une question vaut 1,3 point de R@5 : un écart d'une ou deux questions n'est pas significatif. **Ne servent
+Palier 1 (chunks naïfs, sans OCR ni reranker, `palier1_recherche.md`) : BM25 0,584, dense 0,669, hybride
+0,675 de R@5 (multi-doc : 0,40 → 0,80 avec l'hybride). Une question vaut 1,3 point de R@5 : un écart d'une ou deux questions n'est pas significatif. **Ne servent
 à rien ou presque** : BM25 en plus du dense et l'en-tête de contexte, gardés pour leur coût presque nul ;
 la porte sur le score, retirée (section 4). **Comptent le plus** : l'OCR, le reranker, le dense et la vérification.
 
@@ -66,7 +67,4 @@ zone où la courbe oscille de ±3 questions : seuil non retenu tant que la valid
 erreurs de lecture. 7 mauvaises cases de tableau (la moyenne 1 043 au lieu de la médiane 1 514, sur la
 même ligne : la vérification ne peut rien, le chiffre est bien dans l'extrait), 4 réponses partielles,
 4 valeurs de graphique devinées, 3 synthèses incomplètes, 2 multi-doc n'utilisant qu'un document,
-2 pièges non détectés.
-
-Sur la v2, s'ajoutent les éditions périmées : le modèle prend parfois le chiffre de l'édition v1 alors que
-la v2, plus récente, est dans le contexte (temporel : 0,00 sur 12 questions).
+2 pièges non détectés. En v2 s'ajoutent les éditions périmées (temporel : 0,00).

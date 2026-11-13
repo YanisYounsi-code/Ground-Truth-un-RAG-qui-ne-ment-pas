@@ -20,6 +20,17 @@ et passe les 97 pages scannées par Tesseract.
 | Pipeline complet, premier prompt, sans porte | +0,135 (`des_tests/rapports/val1_complet_sansporte_report.json`) | 43 % | 15 % |
 | **Pipeline final : prompt corrigé + vérification de la réponse** | **+0,38** (`des_tests/rapports/val1_complet_report.json`) | 22 % | 37 % |
 
+## 1 bis. Palier 1 : BM25 seul, dense seul, hybride (chunks naïfs, sans OCR ni reranker)
+
+| Configuration | R@5 | R@10 | MRR | R@5 texte | R@5 multi-doc | R@5 scan |
+|---|---|---|---|---|---|---|
+| BM25 seul | 0,584 | 0,708 | 0,496 | 0,65 | 0,40 | 0,11 |
+| Dense seul | 0,669 | 0,773 | 0,568 | 0,81 | 0,50 | 0,11 |
+| Hybride (RRF) | 0,675 | 0,792 | 0,567 | 0,77 | 0,80 | 0,11 |
+
+Le dense bat BM25 (les questions reformulent) ; l'hybride sert surtout au multi-doc ; sans OCR les scans
+sont perdus. Détails : `des_tests/palier1_recherche.md`.
+
 ## 2. Ce que chaque brique apporte à la recherche
 
 Une brique retirée à la fois, sur les 77 questions de validation v1 qui ont une réponse

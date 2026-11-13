@@ -26,3 +26,11 @@ Une ligne par essai. Recherche mesurée sur les 77 questions de validation v1 qu
 | 10/11 | `run.sh index` + `run.sh update` (v1 + v2), pipeline complet | 0,912 | 0,666 | +0,125 | 6,1 s par question ; soumission v2 `2026-11-10_1` |
 | 10/11 | Aveux cherchés dans toute la réponse (et plus seulement les 300 premiers caractères) | – | – | – | corrige val2-024 ; v1 inchangée (+0,37) |
 
+## Palier 1, mesure complétée le 13/11 (index palier1 : chunks naïfs, sans OCR, sans reranker)
+
+| Date | Configuration | R@5 | R@10 | MRR | nDCG@10 | Remarque |
+|---|---|---|---|---|---|---|
+| 13/11 | BM25 seul | 0,584 | 0,708 | 0,496 | 0,484 | multi-doc 0,40 |
+| 13/11 | Dense seul (bge-m3) | 0,669 | 0,773 | 0,568 | 0,559 | texte 0,81 |
+| 13/11 | Hybride RRF | 0,675 | 0,792 | 0,567 | 0,554 | multi-doc 0,80 ; scans 0,11 sans OCR |
+
